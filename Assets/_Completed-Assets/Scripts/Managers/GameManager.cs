@@ -241,7 +241,7 @@ namespace Complete
         {
             for (int i = 0; i < m_Tanks.Length; i++)
             {
-                m_Tanks[i].Reset();
+                //m_Tanks[i].Reset();
             }
         }
 
