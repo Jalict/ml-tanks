@@ -1,0 +1,44 @@
+12-11-2018 15:32:25
+ 
+Log
+The Agent component attached to the GameObject CompleteTank(Clone) was initialized without a brain.
+UnityEngine.Debug:Log(Object)
+MLAgents.Agent:OnEnableHelper(Academy) (at Assets/ML-Agents/Scripts/Agent.cs:305)
+MLAgents.Agent:OnEnable() (at Assets/ML-Agents/Scripts/Agent.cs:277)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+Complete.GameManager:SpawnAllTanks() (at Assets/_Completed-Assets/Scripts/Managers/GameManager.cs:47)
+Complete.GameManager:Start() (at Assets/_Completed-Assets/Scripts/Managers/GameManager.cs:32)
+
+Log
+The Agent component attached to the GameObject CompleteTank(Clone) was initialized without a brain.
+UnityEngine.Debug:Log(Object)
+MLAgents.Agent:OnEnableHelper(Academy) (at Assets/ML-Agents/Scripts/Agent.cs:305)
+MLAgents.Agent:OnEnable() (at Assets/ML-Agents/Scripts/Agent.cs:277)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+Complete.GameManager:SpawnAllTanks() (at Assets/_Completed-Assets/Scripts/Managers/GameManager.cs:47)
+Complete.GameManager:Start() (at Assets/_Completed-Assets/Scripts/Managers/GameManager.cs:32)
+
+Exception
+UnityAgentsException: The Communicator was unable to connect. Please make sure the External process is ready to accept communication with Unity.
+MLAgents.Batcher.SendAcademyParameters (MLAgents.CommunicatorObjects.UnityRLInitializationOutput academyParameters) (at Assets/ML-Agents/Scripts/Batcher.cs:83)
+MLAgents.Academy.InitializeEnvironment () (at Assets/ML-Agents/Scripts/Academy.cs:320)
+MLAgents.Academy.Awake () (at Assets/ML-Agents/Scripts/Academy.cs:227)
+
+Log
+The Agent component attached to the GameObject CompleteTank(Clone) was initialized without a brain.
+UnityEngine.Debug:Log(Object)
+MLAgents.Agent:OnEnableHelper(Academy) (at Assets/ML-Agents/Scripts/Agent.cs:305)
+MLAgents.Agent:OnEnable() (at Assets/ML-Agents/Scripts/Agent.cs:277)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+Complete.GameManager:SpawnAllTanks() (at Assets/_Completed-Assets/Scripts/Managers/GameManager.cs:47)
+Complete.GameManager:Start() (at Assets/_Completed-Assets/Scripts/Managers/GameManager.cs:32)
+
+Log
+The Agent component attached to the GameObject CompleteTank(Clone) was initialized without a brain.
+UnityEngine.Debug:Log(Object)
+MLAgents.Agent:OnEnableHelper(Academy) (at Assets/ML-Agents/Scripts/Agent.cs:305)
+MLAgents.Agent:OnEnable() (at Assets/ML-Agents/Scripts/Agent.cs:277)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+Complete.GameManager:SpawnAllTanks() (at Assets/_Completed-Assets/Scripts/Managers/GameManager.cs:47)
+Complete.GameManager:Start() (at Assets/_Completed-Assets/Scripts/Managers/GameManager.cs:32)
+

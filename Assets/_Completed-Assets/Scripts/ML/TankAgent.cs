@@ -12,6 +12,9 @@ public class TankAgent : Agent {
     public Complete.GameManager m_GameManager;
     public RayPerception m_RayPerception;
 
+    float lastOtherHealth;
+    float lastSelfHealth;
+
     public void Start()
     {
         // Get Ray Perception
@@ -32,8 +35,8 @@ public class TankAgent : Agent {
         }
 
         // Health
-        m_OtherHealth = m_OtherTankManager.m_Movement.GetComponent<Complete.TankHealth>();
-        m_OtherHealth = m_SelfTankManager.m_Movement.GetComponent<Complete.TankHealth>();
+        m_OtherHealth = m_OtherTankManager.m_Movement.gameObject.GetComponent<Complete.TankHealth>();
+        m_SelfHealth = m_SelfTankManager.m_Movement.gameObject.GetComponent<Complete.TankHealth>();
 
         // Get Brain
         Brain[] brains = FindObjectsOfType<Brain>();
@@ -42,16 +45,16 @@ public class TankAgent : Agent {
             if (brains[i].gameObject.name.Contains(m_SelfTankManager.m_PlayerNumber.ToString()))
                 GiveBrain(brains[i]);
         }
+
+        // Init values
+        lastOtherHealth = m_OtherHealth.m_StartingHealth;
+        lastSelfHealth = m_SelfHealth.m_StartingHealth;
     }
 
     public override void AgentReset()
     {
 
-    }
-
-    float lastOtherHealth;
-    float lastSelfHealth;
-        
+    }       
 
     public override void CollectObservations()
     {
