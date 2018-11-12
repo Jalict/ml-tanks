@@ -15,8 +15,8 @@ namespace Complete
         
         private AudioSource m_ExplosionAudio;               // The audio source to play when the tank explodes.
         private ParticleSystem m_ExplosionParticles;        // The particle system the will play when the tank is destroyed.
-        private float m_CurrentHealth;                      // How much health the tank currently has.
-        private bool m_Dead;                                // Has the tank been reduced beyond zero health yet?
+        public float m_CurrentHealth;                      // How much health the tank currently has.
+        public bool m_Dead;                                // Has the tank been reduced beyond zero health yet?
 
 
         private void Awake ()

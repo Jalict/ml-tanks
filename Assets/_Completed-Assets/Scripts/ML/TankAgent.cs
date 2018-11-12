@@ -5,6 +5,8 @@ using MLAgents;
 
 public class TankAgent : Agent {
 
+    public Complete.TankHealth m_OtherHealth;
+    public Complete.TankHealth m_SelfHealth;
     public Complete.TankManager m_OtherTankManager;
     public Complete.TankManager m_SelfTankManager;
     public Complete.GameManager m_GameManager;
@@ -29,6 +31,10 @@ public class TankAgent : Agent {
                 m_OtherTankManager = tankManager;
         }
 
+        // Health
+        m_OtherHealth = m_OtherTankManager.m_Movement.GetComponent<Complete.TankHealth>();
+        m_OtherHealth = m_SelfTankManager.m_Movement.GetComponent<Complete.TankHealth>();
+
         // Get Brain
         Brain[] brains = FindObjectsOfType<Brain>();
         for(int i = 0; i < brains.Length;i++)
@@ -43,6 +49,10 @@ public class TankAgent : Agent {
 
     }
 
+    float lastOtherHealth;
+    float lastSelfHealth;
+        
+
     public override void CollectObservations()
     {
         // Ray Perception
@@ -52,7 +62,29 @@ public class TankAgent : Agent {
         AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
         AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 1.5f, 0f));
 
-        // Whateverelse
+        // Other lost health or died
+        if(lastOtherHealth < m_OtherHealth.m_CurrentHealth)
+        {
+            AddReward(1.0f);
+
+            if (m_OtherHealth.m_Dead)
+                AddReward(1.0f);
+        }
+        lastOtherHealth = m_OtherHealth.m_CurrentHealth;
+
+        // Self lost health or died
+        if (lastSelfHealth < m_SelfHealth.m_CurrentHealth)
+        {
+            AddReward(-1.0f);
+
+            if (m_SelfHealth.m_Dead)
+                AddReward(-1.0f);
+        }
+        lastSelfHealth = m_SelfHealth.m_CurrentHealth;
+
+        // Time penalty
+        AddReward(-0.05f);
+        
     }
 
     public override void AgentAction(float[] vectorAction, string textAction)
