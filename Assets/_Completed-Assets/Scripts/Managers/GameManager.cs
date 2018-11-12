@@ -22,6 +22,7 @@ namespace Complete
         private TankManager m_RoundWinner;          // Reference to the winner of the current round.  Used to make an announcement of who won.
         private TankManager m_GameWinner;           // Reference to the winner of the game.  Used to make an announcement of who won.
 
+        public bool roundStarted;
 
         private void Start()
         {
@@ -33,7 +34,7 @@ namespace Complete
             SetCameraTargets();
 
             // Once the tanks have been created and the camera is using them as targets, start the game.
-            StartCoroutine (GameLoop ());
+            // StartCoroutine (GameLoop ());
         }
 
 
@@ -192,6 +193,14 @@ namespace Complete
             return null;
         }
 
+        public void Update()
+        {
+            if(Input.GetKeyDown(KeyCode.R))
+            {
+                QuickReset();
+            }
+        }
+
 
         // This function is to find out if there is a winner of the game.
         private TankManager GetGameWinner()
@@ -241,8 +250,18 @@ namespace Complete
         {
             for (int i = 0; i < m_Tanks.Length; i++)
             {
-                //m_Tanks[i].Reset();
+                m_Tanks[i].Reset();
             }
+        }
+
+        // Quick reset for Machine Learning
+        public void QuickReset()
+        {
+            ResetAllTanks();
+
+            m_CameraControl.SetStartPositionAndSize();
+
+            EnableTankControl();
         }
 
 

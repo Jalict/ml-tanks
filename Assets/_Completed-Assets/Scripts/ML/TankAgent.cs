@@ -45,11 +45,14 @@ public class TankAgent : Agent {
         // Init values
         lastOtherHealth = m_OtherHealth.m_StartingHealth;
         lastSelfHealth = m_SelfHealth.m_StartingHealth;
+
+        StartCoroutine(StartNewRound());
     }
 
     public override void AgentReset()
     {
-
+        Debug.Log("RESETTING, GM EXIST? " + (m_GameManager != null));
+        m_GameManager.QuickReset();
     }       
 
     public override void CollectObservations()
@@ -59,63 +62,82 @@ public class TankAgent : Agent {
         float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f };
         var detectableObjects = new[] { "projectile", "Player", "wall" };
         AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
-        AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 1.5f, 0f));
+        AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 1.5f, 0f));       
+    }
 
-        // Other lost health or died
-        if(lastOtherHealth < m_OtherHealth.m_CurrentHealth)
-        {
-            AddReward(1.0f);
+    IEnumerator StartNewRound()
+    {
+        m_GameManager.roundStarted = false;
 
-            if (m_OtherHealth.m_Dead)
-                AddReward(1.0f);
-        }
-        lastOtherHealth = m_OtherHealth.m_CurrentHealth;
+        AgentReset();
 
-        // Self lost health or died
-        if (lastSelfHealth < m_SelfHealth.m_CurrentHealth)
-        {
-            AddReward(-1.0f);
+        yield return new WaitForSeconds(3.0f);
 
-            if (m_SelfHealth.m_Dead)
-                AddReward(-1.0f);
-        }
-        lastSelfHealth = m_SelfHealth.m_CurrentHealth;
-
-        // Time penalty
-        AddReward(-0.05f);
-        
+        m_GameManager.roundStarted = true;
     }
 
     public override void AgentAction(float[] vectorAction, string textAction)
     {
-        // Get Movement Action
-        int forward = (int)vectorAction[0];
-        int rotation = (int)vectorAction[1];
-        bool shoot = vectorAction[2] == 1; 
+        if (m_GameManager.roundStarted && m_GameManager)
+        {
+            // Get Movement Action
+            int forward = (int)vectorAction[0];
+            int rotation = (int)vectorAction[1];
+            bool shoot = vectorAction[2] == 1; 
 
-        // Forward
-        if(forward == 1)
-        {
-            m_SelfTankManager.m_Movement.m_MovementInputValue = 1;
-        }
-        else if (forward == 2)
-        {
-            m_SelfTankManager.m_Movement.m_MovementInputValue = -1;
-        }
+            // Forward
+            if(forward == 1)
+            {
+                m_SelfTankManager.m_Movement.m_MovementInputValue = 1;
+            }
+            else if (forward == 2)
+            {
+                m_SelfTankManager.m_Movement.m_MovementInputValue = -1;
+            }
 
-        // Turn
-        if (rotation == 1)
-        {
-            m_SelfTankManager.m_Movement.m_TurnInputValue = 1;
-        }
-        else if (rotation == 2)
-        {
-            m_SelfTankManager.m_Movement.m_TurnInputValue = -1;
-        }
+            // Turn
+            if (rotation == 1)
+            {
+                m_SelfTankManager.m_Movement.m_TurnInputValue = 1;
+            }
+            else if (rotation == 2)
+            {
+                m_SelfTankManager.m_Movement.m_TurnInputValue = -1;
+            }
 
-        // Shoot
-        if (shoot)
-            m_SelfTankManager.m_Shooting.Fire();
+            // Shoot
+            if (shoot)
+                m_SelfTankManager.m_Shooting.Fire();
+
+            // Other lost health or died
+            if (lastOtherHealth < m_OtherHealth.m_CurrentHealth)
+            {
+                AddReward(1.0f);
+
+                if (m_OtherHealth.m_Dead && !m_SelfHealth.m_Dead)
+                {
+                    AddReward(1.0f);
+                    Done();
+                    StartCoroutine(StartNewRound());
+                }
+            }
+            lastOtherHealth = m_OtherHealth.m_CurrentHealth;
+
+            // Self lost health or died
+            if (lastSelfHealth < m_SelfHealth.m_CurrentHealth)
+            {
+                AddReward(-1.0f);
+
+                if (m_SelfHealth.m_Dead && !m_OtherHealth.m_Dead)
+                {
+                    AddReward(-1.0f);
+                }
+            }
+            lastSelfHealth = m_SelfHealth.m_CurrentHealth;
+
+            // Time penalty
+            AddReward(-0.05f);
+        }
     }
 }
 

@@ -181,7 +181,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TANKS!
+  m_Text: MACHINE LEARNING!
 --- !u!222 &102963702
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -858,13 +858,13 @@ MonoBehaviour:
     height: 80
     qualityLevel: 1
     timeScale: 1
-    targetFrameRate: -1
+    targetFrameRate: 30
   inferenceConfiguration:
     width: 1280
     height: 720
     qualityLevel: 0
     timeScale: 1
-    targetFrameRate: 60
+    targetFrameRate: 30
   resetParameters:
     resetParameters: []
 --- !u!4 &1755367166
