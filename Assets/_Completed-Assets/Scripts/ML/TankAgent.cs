@@ -51,7 +51,7 @@ public class TankAgent : Agent {
 
     public override void AgentReset()
     {
-        Debug.Log("RESETTING, GM EXIST? " + (m_GameManager != null));
+        Debug.Log("RESETTING, GM EXIST? " + (m_GameManager != null ? "YES" : "NO"));
         m_GameManager.QuickReset();
     }       
 

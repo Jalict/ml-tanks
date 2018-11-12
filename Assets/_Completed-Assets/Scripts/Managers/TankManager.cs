@@ -76,12 +76,8 @@ namespace Complete
             m_Instance.transform.position = m_SpawnPoint.position;
             m_Instance.transform.rotation = m_SpawnPoint.rotation;
 
-            m_Instance.gameObject.GetComponent<TankMovement>().enabled = false;
-            m_Instance.gameObject.GetComponent<TankMovement>().enabled = true;
             m_Instance.gameObject.GetComponent<TankHealth>().enabled = false;
             m_Instance.gameObject.GetComponent<TankHealth>().enabled = true;
-            m_Instance.gameObject.GetComponent<TankShooting>().enabled = false;
-            m_Instance.gameObject.GetComponent<TankShooting>().enabled = true;
         }
     }
 }
