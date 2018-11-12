@@ -1,4 +1,4 @@
-12-11-2018 18:19:02
+12-11-2018 19:21:09
  
 Log
 The Agent component attached to the GameObject CompleteTank(Clone) was initialized without a brain.
@@ -17,55 +17,4 @@ MLAgents.Agent:OnEnable() (at Assets/ML-Agents/Scripts/Agent.cs:277)
 UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
 Complete.GameManager:SpawnAllTanks() (at Assets/_Completed-Assets/Scripts/Managers/GameManager.cs:48)
 Complete.GameManager:Start() (at Assets/_Completed-Assets/Scripts/Managers/GameManager.cs:33)
-
-Log
-RESETTING, GM EXIST? False
-UnityEngine.Debug:Log(Object)
-TankAgent:AgentReset() (at Assets/_Completed-Assets/Scripts/ML/TankAgent.cs:54)
-MLAgents.Agent:_AgentReset() (at Assets/ML-Agents/Scripts/Agent.cs:806)
-MLAgents.Academy:ForcedFullReset() (at Assets/ML-Agents/Scripts/Academy.cs:519)
-MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:562)
-MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
-
-Exception
-NullReferenceException: Object reference not set to an instance of an object
-TankAgent.AgentReset () (at Assets/_Completed-Assets/Scripts/ML/TankAgent.cs:55)
-MLAgents.Agent._AgentReset () (at Assets/ML-Agents/Scripts/Agent.cs:806)
-MLAgents.Academy.ForcedFullReset () (at Assets/ML-Agents/Scripts/Academy.cs:519)
-MLAgents.Academy.EnvironmentStep () (at Assets/ML-Agents/Scripts/Academy.cs:562)
-MLAgents.Academy.FixedUpdate () (at Assets/ML-Agents/Scripts/Academy.cs:610)
-
-Log
-RESETTING, GM EXIST? True
-UnityEngine.Debug:Log(Object)
-TankAgent:AgentReset() (at Assets/_Completed-Assets/Scripts/ML/TankAgent.cs:54)
-<StartNewRound>c__Iterator0:MoveNext() (at Assets/_Completed-Assets/Scripts/ML/TankAgent.cs:72)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-TankAgent:Start() (at Assets/_Completed-Assets/Scripts/ML/TankAgent.cs:49)
-
-Log
-RESETTING, GM EXIST? True
-UnityEngine.Debug:Log(Object)
-TankAgent:AgentReset() (at Assets/_Completed-Assets/Scripts/ML/TankAgent.cs:54)
-<StartNewRound>c__Iterator0:MoveNext() (at Assets/_Completed-Assets/Scripts/ML/TankAgent.cs:72)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-TankAgent:Start() (at Assets/_Completed-Assets/Scripts/ML/TankAgent.cs:49)
-
-Log
-RESETTING, GM EXIST? True
-UnityEngine.Debug:Log(Object)
-TankAgent:AgentReset() (at Assets/_Completed-Assets/Scripts/ML/TankAgent.cs:54)
-MLAgents.Agent:_AgentReset() (at Assets/ML-Agents/Scripts/Agent.cs:806)
-MLAgents.Academy:ForcedFullReset() (at Assets/ML-Agents/Scripts/Academy.cs:519)
-MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:562)
-MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
-
-Log
-RESETTING, GM EXIST? True
-UnityEngine.Debug:Log(Object)
-TankAgent:AgentReset() (at Assets/_Completed-Assets/Scripts/ML/TankAgent.cs:54)
-MLAgents.Agent:_AgentReset() (at Assets/ML-Agents/Scripts/Agent.cs:806)
-MLAgents.Academy:ForcedFullReset() (at Assets/ML-Agents/Scripts/Academy.cs:519)
-MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:562)
-MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
 

@@ -83,9 +83,6 @@ namespace Complete
 
             // Play the tank explosion sound effect.
             m_ExplosionAudio.Play();
-
-            // Turn the tank off.
-            gameObject.SetActive (false);
         }
     }
 }

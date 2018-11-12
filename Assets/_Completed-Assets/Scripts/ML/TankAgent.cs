@@ -11,11 +11,23 @@ public class TankAgent : Agent {
     public Complete.TankManager m_SelfTankManager;
     public Complete.GameManager m_GameManager;
     public RayPerception m_RayPerception;
+    public Transform m_SpawnPoint;
 
     float lastOtherHealth;
     float lastSelfHealth;
 
     public void Start()
+    {
+        Setup();
+
+        // Get Brain
+        Brain brain = FindObjectOfType<Brain>();
+        GiveBrain(brain);
+
+        m_GameManager.roundStarted = true;
+    }
+
+    private void Setup()
     {
         // Get Ray Perception
         m_RayPerception = GetComponent<RayPerception>();
@@ -38,22 +50,40 @@ public class TankAgent : Agent {
         m_OtherHealth = m_OtherTankManager.m_Movement.gameObject.GetComponent<Complete.TankHealth>();
         m_SelfHealth = m_SelfTankManager.m_Movement.gameObject.GetComponent<Complete.TankHealth>();
 
-        // Get Brain
-        Brain brain = FindObjectOfType<Brain>();
-        GiveBrain(brain);
+        //SpawnPoint
+        m_SpawnPoint = m_SelfTankManager.m_SpawnPoint;
+
+        // Init values
+        lastOtherHealth = m_OtherHealth.m_StartingHealth;
+        lastSelfHealth = m_SelfHealth.m_StartingHealth;
+    }
+
+    public override void AgentReset()
+    {
+        StartCoroutine(GetReferences());
+    }     
+    
+    IEnumerator GetReferences()
+    {
+        yield return new WaitUntil(
+            () =>
+            m_OtherHealth != null &&
+            m_SelfHealth != null &&
+            GetComponent<Complete.TankHealth>() != null
+            );
 
         // Init values
         lastOtherHealth = m_OtherHealth.m_StartingHealth;
         lastSelfHealth = m_SelfHealth.m_StartingHealth;
 
-        StartCoroutine(StartNewRound());
-    }
+        // Set Transform
+        transform.position = m_SpawnPoint.position;
+        transform.rotation = m_SpawnPoint.rotation;
 
-    public override void AgentReset()
-    {
-        Debug.Log("RESETTING, GM EXIST? " + (m_GameManager != null ? "YES" : "NO"));
-        m_GameManager.QuickReset();
-    }       
+        // Resets health
+        gameObject.GetComponent<Complete.TankHealth>().enabled = false;
+        gameObject.GetComponent<Complete.TankHealth>().enabled = true;
+    }
 
     public override void CollectObservations()
     {
@@ -63,17 +93,6 @@ public class TankAgent : Agent {
         var detectableObjects = new[] { "projectile", "Player", "wall" };
         AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
         AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 1.5f, 0f));       
-    }
-
-    IEnumerator StartNewRound()
-    {
-        m_GameManager.roundStarted = false;
-
-        AgentReset();
-
-        yield return new WaitForSeconds(3.0f);
-
-        m_GameManager.roundStarted = true;
     }
 
     public override void AgentAction(float[] vectorAction, string textAction)
@@ -121,25 +140,24 @@ public class TankAgent : Agent {
     private void CalculateRewards()
     {
         // Other lost health or died
-        if (lastOtherHealth < m_OtherHealth.m_CurrentHealth)
+        if (m_OtherHealth.m_CurrentHealth < lastOtherHealth)
         {
             AddReward(1.0f);
 
-            if (m_OtherHealth.m_Dead && !m_SelfHealth.m_Dead)
+            if (lastOtherHealth > 0 && m_OtherHealth.m_CurrentHealth <= 0)
             {
                 AddReward(1.0f);
                 Done();
-                StartCoroutine(StartNewRound());
             }
         }
         lastOtherHealth = m_OtherHealth.m_CurrentHealth;
 
         // Self lost health or died
-        if (lastSelfHealth < m_SelfHealth.m_CurrentHealth)
+        if (m_SelfHealth.m_CurrentHealth < lastSelfHealth)
         {
             AddReward(-1.0f);
 
-            if (m_SelfHealth.m_Dead && !m_OtherHealth.m_Dead)
+            if (lastSelfHealth > 0 && m_SelfHealth.m_CurrentHealth <= 0)
             {
                 AddReward(-1.0f);
             }
