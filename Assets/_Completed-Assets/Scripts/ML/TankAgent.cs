@@ -39,12 +39,8 @@ public class TankAgent : Agent {
         m_SelfHealth = m_SelfTankManager.m_Movement.gameObject.GetComponent<Complete.TankHealth>();
 
         // Get Brain
-        Brain[] brains = FindObjectsOfType<Brain>();
-        for(int i = 0; i < brains.Length;i++)
-        {
-            if (brains[i].gameObject.name.Contains(m_SelfTankManager.m_PlayerNumber.ToString()))
-                GiveBrain(brains[i]);
-        }
+        Brain brain = FindObjectOfType<Brain>();
+        GiveBrain(brain);
 
         // Init values
         lastOtherHealth = m_OtherHealth.m_StartingHealth;
