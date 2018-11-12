@@ -80,64 +80,74 @@ public class TankAgent : Agent {
     {
         if (m_GameManager.roundStarted && m_GameManager)
         {
-            // Get Movement Action
-            int forward = (int)vectorAction[0];
-            int rotation = (int)vectorAction[1];
-            bool shoot = vectorAction[2] == 1; 
+            Inputs(vectorAction);
 
-            // Forward
-            if(forward == 1)
-            {
-                m_SelfTankManager.m_Movement.m_MovementInputValue = 1;
-            }
-            else if (forward == 2)
-            {
-                m_SelfTankManager.m_Movement.m_MovementInputValue = -1;
-            }
+            CalculateRewards();
+        }
+    }
 
-            // Turn
-            if (rotation == 1)
-            {
-                m_SelfTankManager.m_Movement.m_TurnInputValue = 1;
-            }
-            else if (rotation == 2)
-            {
-                m_SelfTankManager.m_Movement.m_TurnInputValue = -1;
-            }
+    private void Inputs(float[] vectorAction)
+    {
+        // Get Movement Action
+        int forward = (int)vectorAction[0];
+        int rotation = (int)vectorAction[1];
+        bool shoot = vectorAction[2] == 1;
 
-            // Shoot
-            if (shoot)
-                m_SelfTankManager.m_Shooting.Fire();
+        // Forward
+        if (forward == 1)
+        {
+            m_SelfTankManager.m_Movement.m_MovementInputValue = 1;
+        }
+        else if (forward == 2)
+        {
+            m_SelfTankManager.m_Movement.m_MovementInputValue = -1;
+        }
 
-            // Other lost health or died
-            if (lastOtherHealth < m_OtherHealth.m_CurrentHealth)
+        // Turn
+        if (rotation == 1)
+        {
+            m_SelfTankManager.m_Movement.m_TurnInputValue = 1;
+        }
+        else if (rotation == 2)
+        {
+            m_SelfTankManager.m_Movement.m_TurnInputValue = -1;
+        }
+
+        // Shoot
+        if (shoot)
+            m_SelfTankManager.m_Shooting.Fire();
+    }
+
+    private void CalculateRewards()
+    {
+        // Other lost health or died
+        if (lastOtherHealth < m_OtherHealth.m_CurrentHealth)
+        {
+            AddReward(1.0f);
+
+            if (m_OtherHealth.m_Dead && !m_SelfHealth.m_Dead)
             {
                 AddReward(1.0f);
-
-                if (m_OtherHealth.m_Dead && !m_SelfHealth.m_Dead)
-                {
-                    AddReward(1.0f);
-                    Done();
-                    StartCoroutine(StartNewRound());
-                }
+                Done();
+                StartCoroutine(StartNewRound());
             }
-            lastOtherHealth = m_OtherHealth.m_CurrentHealth;
+        }
+        lastOtherHealth = m_OtherHealth.m_CurrentHealth;
 
-            // Self lost health or died
-            if (lastSelfHealth < m_SelfHealth.m_CurrentHealth)
+        // Self lost health or died
+        if (lastSelfHealth < m_SelfHealth.m_CurrentHealth)
+        {
+            AddReward(-1.0f);
+
+            if (m_SelfHealth.m_Dead && !m_OtherHealth.m_Dead)
             {
                 AddReward(-1.0f);
-
-                if (m_SelfHealth.m_Dead && !m_OtherHealth.m_Dead)
-                {
-                    AddReward(-1.0f);
-                }
             }
-            lastSelfHealth = m_SelfHealth.m_CurrentHealth;
-
-            // Time penalty
-            AddReward(-0.05f);
         }
+        lastSelfHealth = m_SelfHealth.m_CurrentHealth;
+
+        // Time penalty
+        AddReward(-0.05f);
     }
 }
 
