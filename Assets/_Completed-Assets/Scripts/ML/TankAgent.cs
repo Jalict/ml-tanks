@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using MLAgents;
+using System;
 
 public class TankAgent : Agent {
 
@@ -60,9 +61,9 @@ public class TankAgent : Agent {
 
     public override void AgentReset()
     {
-        StartCoroutine(GetReferences());
-    }     
-    
+        m_GameManager.QuickReset();
+    }
+
     IEnumerator GetReferences()
     {
         yield return new WaitUntil(
@@ -89,8 +90,8 @@ public class TankAgent : Agent {
     {
         // Ray Perception
         var rayDistance = 12f;
-        float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f };
-        var detectableObjects = new[] { "projectile", "Player", "wall" };
+        float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f, -180 };
+        var detectableObjects = new[] { "Player", "wall" };
         AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
         AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 1.5f, 0f));       
     }
@@ -99,19 +100,19 @@ public class TankAgent : Agent {
     {
         if (m_GameManager.roundStarted && m_GameManager)
         {
-            Inputs(vectorAction);
+            // Get Movement Action
+            int forward = (int)vectorAction[0];
+            int rotation = (int)vectorAction[1];
+            bool shoot = vectorAction[2] == 1;
 
-            CalculateRewards();
+            Inputs(forward, rotation, shoot);
+
+            CalculateRewards(shoot);
         }
     }
 
-    private void Inputs(float[] vectorAction)
+    private void Inputs(int forward, int rotation, bool shoot)
     {
-        // Get Movement Action
-        int forward = (int)vectorAction[0];
-        int rotation = (int)vectorAction[1];
-        bool shoot = vectorAction[2] == 1;
-
         // Forward
         if (forward == 1)
         {
@@ -137,8 +138,11 @@ public class TankAgent : Agent {
             m_SelfTankManager.m_Shooting.Fire();
     }
 
-    private void CalculateRewards()
+    private void CalculateRewards(bool shoot)
     {
+        if (shoot)
+            AddReward(-1f);
+
         // Other lost health or died
         if (m_OtherHealth.m_CurrentHealth < lastOtherHealth)
         {

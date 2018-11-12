@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 70
+    vectorObservationSize: 80
     numStackedVectorObservations: 1
     vectorActionSize: 030000000300000002000000
     cameraResolutions: []
@@ -609,6 +609,7 @@ MonoBehaviour:
     m_Wins: 0
     m_Movement: {fileID: 0}
     m_Shooting: {fileID: 0}
+  roundStarted: 0
 --- !u!4 &1304999366
 Transform:
   m_ObjectHideFlags: 0
