@@ -262,6 +262,12 @@ namespace Complete
             m_CameraControl.SetStartPositionAndSize();
 
             EnableTankControl();
+
+            GameObject[] projectiles = GameObject.FindGameObjectsWithTag("projectile");
+            for (int i = projectiles.Length - 1; i > 0; i--)
+            {
+                Destroy(projectiles[i]);
+            }
         }
 
 

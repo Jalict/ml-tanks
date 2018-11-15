@@ -50,8 +50,10 @@ namespace MLAgents
                     {
                         if (hit.collider.gameObject.CompareTag(detectableObjects[i]))
                         {
-                            subList[i] = 1;
-                            subList[detectableObjects.Length + 1] = hit.distance / rayDistance;
+                            if (!ReferenceEquals(hit.collider.gameObject, gameObject)) { 
+                                subList[i] = 1;
+                                subList[detectableObjects.Length + 1] = hit.distance / rayDistance;
+                            }
                             break;
                         }
                     }
