@@ -5681,6 +5681,8 @@ MonoBehaviour:
   m_EngineIdling: {fileID: 8300000, guid: 4932ab25b84dd7649b80af68a9660ddc, type: 3}
   m_EngineDriving: {fileID: 8300000, guid: d7ca9fb5aa30155449192b23d7fb3336, type: 3}
   m_PitchRange: 0.1
+  m_MovementInputValue: 0
+  m_TurnInputValue: 0
   m_PlayerColor: {r: 1, g: 0, b: 0, a: 0}
   m_SpawnPoint: {fileID: 1049453506}
 --- !u!82 &764565795
@@ -15900,6 +15902,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CameraControl: {fileID: 1771596988}
+  agentTank1: {fileID: 2129144517}
+  healthTank1: {fileID: 2129144510}
+  movementTank1: {fileID: 2129144511}
+  shootingtank1: {fileID: 2129144509}
+  agentTank2: {fileID: 764565800}
+  healthTank2: {fileID: 764565793}
+  movementTank2: {fileID: 764565794}
+  shootingtank2: {fileID: 764565792}
 --- !u!4 &1304999366
 Transform:
   m_ObjectHideFlags: 0
@@ -21712,6 +21722,8 @@ MonoBehaviour:
   m_EngineIdling: {fileID: 8300000, guid: 4932ab25b84dd7649b80af68a9660ddc, type: 3}
   m_EngineDriving: {fileID: 8300000, guid: d7ca9fb5aa30155449192b23d7fb3336, type: 3}
   m_PitchRange: 0.1
+  m_MovementInputValue: 0
+  m_TurnInputValue: 0
   m_PlayerColor: {r: 0, g: 0.06818819, b: 1, a: 0}
   m_SpawnPoint: {fileID: 664963589}
 --- !u!82 &2129144512

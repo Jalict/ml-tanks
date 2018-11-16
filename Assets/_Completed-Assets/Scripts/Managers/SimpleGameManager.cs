@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using MLAgents;
 
 namespace Complete
 {
@@ -9,12 +10,12 @@ namespace Complete
 
 		public CameraControl m_CameraControl;       // Reference to the CameraControl script for control during different phases.
 
-		public ILTankAgent agentTank1;
+		public Agent agentTank1;
 		public SimpleTankHealth healthTank1;
 		public SimpleTankMovement movementTank1;
 		public SimpleTankShooting shootingtank1;
 
-		public ILTankAgent agentTank2;
+		public Agent agentTank2;
 		public SimpleTankHealth healthTank2;
 		public SimpleTankMovement movementTank2;
 		public SimpleTankShooting shootingtank2;
