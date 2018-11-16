@@ -5662,6 +5662,7 @@ MonoBehaviour:
   m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
   m_ZeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
   m_ExplosionPrefab: {fileID: 151086, guid: 6bc6d0dd8b8428e4ca316513f2cf13c6, type: 2}
+  m_CurrentHealth: 0
   m_Dead: 0
 --- !u!114 &764565794
 MonoBehaviour:
@@ -5937,29 +5938,8 @@ MonoBehaviour:
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 1
-  m_OtherHealth: {fileID: 0}
-  m_SelfHealth: {fileID: 0}
-  m_OtherTankManager:
-    m_PlayerColor: {r: 0, g: 0, b: 0, a: 0}
-    m_SpawnPoint: {fileID: 0}
-    m_PlayerNumber: 0
-    m_ColoredPlayerText: 
-    m_Instance: {fileID: 0}
-    m_Wins: 0
-    m_Movement: {fileID: 0}
-    m_Shooting: {fileID: 0}
-  m_SelfTankManager:
-    m_PlayerColor: {r: 0, g: 0, b: 0, a: 0}
-    m_SpawnPoint: {fileID: 0}
-    m_PlayerNumber: 0
-    m_ColoredPlayerText: 
-    m_Instance: {fileID: 0}
-    m_Wins: 0
-    m_Movement: {fileID: 0}
-    m_Shooting: {fileID: 0}
   m_GameManager: {fileID: 0}
-  m_RayPerception: {fileID: 0}
-  m_SpawnPoint: {fileID: 0}
+  rays: []
 --- !u!1 &826530703
 GameObject:
   m_ObjectHideFlags: 0
@@ -6043,7 +6023,7 @@ GameObject:
   - component: {fileID: 849656815}
   - component: {fileID: 849656816}
   m_Layer: 0
-  m_Name: Brain A
+  m_Name: Brain External
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6074,8 +6054,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 64
-    numStackedVectorObservations: 4
+    vectorObservationSize: 32
+    numStackedVectorObservations: 8
     vectorActionSize: 030000000300000003000000
     cameraResolutions: []
     vectorActionDescriptions:
@@ -21703,6 +21683,7 @@ MonoBehaviour:
   m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
   m_ZeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
   m_ExplosionPrefab: {fileID: 151086, guid: 6bc6d0dd8b8428e4ca316513f2cf13c6, type: 2}
+  m_CurrentHealth: 0
   m_Dead: 0
 --- !u!114 &2129144511
 MonoBehaviour:
@@ -21974,30 +21955,9 @@ MonoBehaviour:
   brain: {fileID: 849656816}
   agentParameters:
     agentCameras: []
-    maxStep: 0
+    maxStep: 500
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 1
-  m_OtherHealth: {fileID: 0}
-  m_SelfHealth: {fileID: 0}
-  m_OtherTankManager:
-    m_PlayerColor: {r: 0, g: 0, b: 0, a: 0}
-    m_SpawnPoint: {fileID: 0}
-    m_PlayerNumber: 0
-    m_ColoredPlayerText: 
-    m_Instance: {fileID: 0}
-    m_Wins: 0
-    m_Movement: {fileID: 0}
-    m_Shooting: {fileID: 0}
-  m_SelfTankManager:
-    m_PlayerColor: {r: 0, g: 0, b: 0, a: 0}
-    m_SpawnPoint: {fileID: 0}
-    m_PlayerNumber: 0
-    m_ColoredPlayerText: 
-    m_Instance: {fileID: 0}
-    m_Wins: 0
-    m_Movement: {fileID: 0}
-    m_Shooting: {fileID: 0}
   m_GameManager: {fileID: 0}
-  m_RayPerception: {fileID: 0}
-  m_SpawnPoint: {fileID: 0}
+  rays: []

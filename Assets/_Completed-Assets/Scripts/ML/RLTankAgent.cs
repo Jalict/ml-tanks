@@ -69,13 +69,16 @@ public class RLTankAgent : Agent {
         m_Self.m_Shooting.Reset();
     }
 
+    public List<float> rays;
+
     public override void CollectObservations()
     {
         // Ray Perception
-        var rayDistance = 12f;
+        var rayDistance = 50f;
         float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f, -180 };
-        var detectableObjects = new[] { "Player", "wall" };
-        AddVectorObs(m_Self.m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));  
+        var detectableObjects = new[] { "wall", "wall" };
+        rays = m_Self.m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f);
+        AddVectorObs(rays);  
     }
 
     public override void AgentAction(float[] vectorAction, string textAction)
@@ -85,7 +88,7 @@ public class RLTankAgent : Agent {
             // Get Movement Action
             int forward = (int)vectorAction[0];
             int rotation = (int)vectorAction[1];
-            bool shoot = vectorAction[2] == 1;
+            bool shoot = vectorAction[2] == 1.0f;
 
             Inputs(forward, rotation, shoot);
 
@@ -104,6 +107,10 @@ public class RLTankAgent : Agent {
         {
             m_Self.m_Movement.m_MovementInputValue = -1;
         }
+        else
+        {
+            m_Self.m_Movement.m_MovementInputValue = 0;
+        }
 
         // Turn
         if (rotation == 1)
@@ -114,16 +121,26 @@ public class RLTankAgent : Agent {
         {
             m_Self.m_Movement.m_TurnInputValue = -1;
         }
+        else
+        {
+            m_Self.m_Movement.m_TurnInputValue = 0;
+        }
 
         // Shoot
-        //if (shoot)
-        //    m_Self.m_Shooting.Fire(m_Self.m_Shooting.m_MinLaunchForce);
+        if (shoot)
+            m_Self.m_Shooting.Fire(m_Self.m_Shooting.m_MinLaunchForce);
     }
 
     private void CalculateRewards(int forward, int rotation, bool shoot)
     {
         if (forward != 0 || rotation != 0)
             AddReward(0.1f);
+
+        // Check if close to something
+        var rayDistance = 50f;
+        float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f, -180 };
+        var detectableObjects = new[] { "Player", "wall" };
+        //m_Self.m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f)
 
         // Other lost health or died
         if (m_Other.m_Health.m_CurrentHealth < lastOtherHealth)

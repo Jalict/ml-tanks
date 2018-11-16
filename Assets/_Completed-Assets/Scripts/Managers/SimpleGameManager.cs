@@ -3,10 +3,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using MLAgents;
+using System;
 
 namespace Complete
 {
 	public class SimpleGameManager : MonoBehaviour {
+
+        public string[] tagsToClean;
 
 		public CameraControl m_CameraControl;       // Reference to the CameraControl script for control during different phases.
 
@@ -49,11 +52,24 @@ namespace Complete
 		}
 
 		private void ResetGame() {
+            CleanUpLevel();
 			ResetAllTanks();
 			m_CameraControl.SetStartPositionAndSize();
 		}
 
-		private bool OneTankLeft() {
+        private void CleanUpLevel()
+        {
+            for(int t = 0; t < tagsToClean.Length;t++)
+            {
+                GameObject[] objectsOfTag = GameObject.FindGameObjectsWithTag(tagsToClean[t]);
+                for(int i = objectsOfTag.Length - 1; i >= 0;i--)
+                {
+                    Destroy(objectsOfTag[i]);
+                }
+            }
+        }
+
+        private bool OneTankLeft() {
 			if (healthTank1.m_Dead || healthTank2.m_Dead) {
 				return true;
 			}
