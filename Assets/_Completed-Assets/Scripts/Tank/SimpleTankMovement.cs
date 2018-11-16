@@ -79,7 +79,7 @@ namespace Complete
 			//if(Input.GetAxis(m_TurnAxisName) != 0)
 			//	m_TurnInputValue = Input.GetAxis (m_TurnAxisName);
 
-			Debug.Log("Move: " + m_MovementInputValue + ", Turn: " + m_TurnInputValue);
+			//Debug.Log("Move: " + m_MovementInputValue + ", Turn: " + m_TurnInputValue);
 
             EngineAudio ();
         }

@@ -22,6 +22,9 @@ namespace Complete
         private float m_ChargeSpeed;                // How fast the launch force increases, based on the max charge time.
         private bool m_Fired;                       // Whether or not the shell has been launched with this button press.
 
+		private float shootCooldown = 0.20f;
+		private float shootCooldownTimer = 0.0f;
+		private bool shotOnCooldown = false;
 
 		public void Reset() {
 			// When the tank is turned on, reset the launch force and the UI
@@ -79,24 +82,37 @@ namespace Complete
         }
 
 
-        public void Fire (float launchForce)
+        public bool Fire (float launchForce)
         {
-            // Set the fired flag so only Fire is only called once.
-            m_Fired = true;
+			if (shotOnCooldown) {
+				shootCooldownTimer += Time.deltaTime;
+				if(shootCooldownTimer > shootCooldown) {
+					shotOnCooldown = false;
+				}
+				return false;
+			} else {
 
-            // Create an instance of the shell and store a reference to it's rigidbody.
-            Rigidbody shellInstance =
-                Instantiate (m_Shell, m_FireTransform.position, m_FireTransform.rotation) as Rigidbody;
+				//Put the shot on cooldown
+				shotOnCooldown = true;
 
-            // Set the shell's velocity to the launch force in the fire position's forward direction.
-            shellInstance.velocity = launchForce * m_FireTransform.forward; 
+				// Set the fired flag so only Fire is only called once.
+				m_Fired = true;
 
-            // Change the clip to the firing clip and play it.
-            m_ShootingAudio.clip = m_FireClip;
-            m_ShootingAudio.Play ();
+				// Create an instance of the shell and store a reference to it's rigidbody.
+				Rigidbody shellInstance =
+					Instantiate(m_Shell, m_FireTransform.position, m_FireTransform.rotation) as Rigidbody;
 
-            // Reset the launch force.  This is a precaution in case of missing button events.
-            m_CurrentLaunchForce = m_MinLaunchForce;
+				// Set the shell's velocity to the launch force in the fire position's forward direction.
+				shellInstance.velocity = launchForce * m_FireTransform.forward;
+
+				// Change the clip to the firing clip and play it.
+				m_ShootingAudio.clip = m_FireClip;
+				m_ShootingAudio.Play();
+
+				// Reset the launch force.  This is a precaution in case of missing button events.
+				m_CurrentLaunchForce = m_MinLaunchForce;
+				return true;
+			}
         }
     }
 }
