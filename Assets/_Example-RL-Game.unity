@@ -5928,7 +5928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a30c80091a7f84d8a6d3ff5244c584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brain: {fileID: 0}
+  brain: {fileID: 849656816}
   agentParameters:
     agentCameras: []
     maxStep: 0
@@ -15900,12 +15900,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CameraControl: {fileID: 1771596988}
-  healthTank1: {fileID: 2129144510}
-  movementTank1: {fileID: 2129144511}
-  shootingtank1: {fileID: 2129144509}
-  healthTank2: {fileID: 764565793}
-  movementTank2: {fileID: 764565794}
-  shootingtank2: {fileID: 764565792}
 --- !u!4 &1304999366
 Transform:
   m_ObjectHideFlags: 0
@@ -21965,7 +21959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a30c80091a7f84d8a6d3ff5244c584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brain: {fileID: 0}
+  brain: {fileID: 849656816}
   agentParameters:
     agentCameras: []
     maxStep: 0

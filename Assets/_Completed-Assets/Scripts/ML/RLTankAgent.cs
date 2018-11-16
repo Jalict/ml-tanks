@@ -107,7 +107,7 @@ public class RLTankAgent : Agent {
 
             Inputs(forward, rotation, shoot);
 
-            CalculateRewards(shoot);
+            CalculateRewards(forward, rotation, shoot);
         }
     }
 
@@ -138,10 +138,10 @@ public class RLTankAgent : Agent {
             m_SelfTankManager.m_Shooting.Fire();
     }
 
-    private void CalculateRewards(bool shoot)
+    private void CalculateRewards(int forward, int rotation, bool shoot)
     {
-        if (shoot)
-            AddReward(-1f);
+        if (forward != 0 || rotation != 0)
+            AddReward(0.1f);
 
         // Other lost health or died
         if (m_OtherHealth.m_CurrentHealth < lastOtherHealth)
