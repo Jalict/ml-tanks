@@ -21,6 +21,14 @@ namespace Complete
             m_Camera = GetComponentInChildren<Camera> ();
         }
 
+        void Start()
+        {
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+            m_Targets = new Transform[players.Length];
+            for (int i = 0; i < players.Length; i++)
+                m_Targets[i] = players[i].transform;
+        }
+
 
         private void FixedUpdate ()
         {
