@@ -10,28 +10,44 @@ namespace Complete
 
 		public CameraControl m_CameraControl;       // Reference to the CameraControl script for control during different phases.
 
-		public SimpleTankHealth healthTank1;
-		public SimpleTankMovement movementTank1;
-		public SimpleTankShooting shootingtank1;
-
-		public SimpleTankHealth healthTank2;
-		public SimpleTankMovement movementTank2;
-		public SimpleTankShooting shootingtank2;
+        private TankComponents[] tanks;
 
 
 		private void Start() {
+            FindTanks();
 			SetCameraTargets();
 			ResetGame();
 		}
 
+        private void FindTanks()
+        {
+            // Find Tanks with 'player' tag
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
 
-		private void SetCameraTargets() {
+            // Make TankComponents array length of found players
+            tanks = new TankComponents[players.Length];
+
+            // Assign components to struct array
+            for(int i = 0; i < players.Length;i++)
+            {
+                tanks[i] = new TankComponents
+                {
+                    health = players[i].GetComponent<SimpleTankHealth>(),
+                    movement = players[i].GetComponent<SimpleTankMovement>(),
+                    shooting = players[i].GetComponent<SimpleTankShooting>()
+                };
+            }
+        }
+
+        private void SetCameraTargets() {
 			// Create a collection of transforms the same size as the number of tanks.
-			Transform[] targets = new Transform[2];
+			Transform[] targets = new Transform[tanks.Length];
 
 			// Put the tank transforms into the array
-			targets[0] = healthTank1.transform;
-			targets[1] = healthTank2.transform;
+            for(int i = 0; i < targets.Length;i++)
+            {
+                targets[i] = tanks[i].movement.transform;
+            }
 
 			// These are the targets the camera should follow.
 			m_CameraControl.m_Targets = targets;
@@ -61,22 +77,37 @@ namespace Complete
         }
 
         private bool OneTankLeft() {
-			if (healthTank1.m_Dead || healthTank2.m_Dead) {
-				return true;
-			}
-			return false;
+            int alive = 0;
+            foreach(TankComponents coms in tanks) {
+                if (!coms.health.m_Dead)
+                    alive++;
+            }
+
+            return alive == 1;
 		}
 
 
 		// This function is used to turn all the tanks back on and reset their positions and properties.
-		private void ResetAllTanks() {
-			healthTank1.Reset();
-			movementTank1.Reset();
-			shootingtank1.Reset();
-
-			healthTank2.Reset();
-			movementTank2.Reset();
-			shootingtank2.Reset();
+		private void ResetAllTanks() { 
+            foreach(TankComponents coms in tanks) {
+                coms.health.Reset();
+                coms.movement.Reset();
+                coms.shooting.Reset();
+            }
 		}
 	}
+
+    public struct TankComponents
+    {
+        public SimpleTankHealth health;
+        public SimpleTankMovement movement;
+        public SimpleTankShooting shooting;
+
+        public TankComponents(SimpleTankHealth health, SimpleTankMovement movement, SimpleTankShooting shooting)
+        {
+            this.health = health;
+            this.movement = movement;
+            this.shooting = shooting;
+        }
+    }
 }
