@@ -1,3 +1,4 @@
+using MLAgents;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -34,7 +35,8 @@ namespace Complete
                 {
                     health = players[i].GetComponent<SimpleTankHealth>(),
                     movement = players[i].GetComponent<SimpleTankMovement>(),
-                    shooting = players[i].GetComponent<SimpleTankShooting>()
+                    shooting = players[i].GetComponent<SimpleTankShooting>(),
+                    ray = players[i].GetComponent<RayPerception>()
                 };
             }
         }
@@ -102,12 +104,14 @@ namespace Complete
         public SimpleTankHealth health;
         public SimpleTankMovement movement;
         public SimpleTankShooting shooting;
+        public RayPerception ray;
 
-        public TankComponents(SimpleTankHealth health, SimpleTankMovement movement, SimpleTankShooting shooting)
+        public TankComponents(SimpleTankHealth health, SimpleTankMovement movement, SimpleTankShooting shooting, RayPerception ray)
         {
             this.health = health;
             this.movement = movement;
             this.shooting = shooting;
+            this.ray = ray;
         }
     }
 }
