@@ -49,7 +49,7 @@ namespace Complete
             {
                 // ... use the max force and launch the shell.
                 m_CurrentLaunchForce = m_MaxLaunchForce;
-                Fire (m_CurrentLaunchForce);
+                //Fire (m_CurrentLaunchForce);
             }
             // Otherwise, if the fire button has just started being pressed...
             else if (Input.GetButtonDown (m_FireButton))
@@ -74,7 +74,7 @@ namespace Complete
             else if (Input.GetButtonUp (m_FireButton) && !m_Fired)
             {
                 // ... launch the shell.
-                Fire (m_CurrentLaunchForce);
+                //Fire (m_CurrentLaunchForce);
             }
         }
 

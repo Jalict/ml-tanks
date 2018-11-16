@@ -32,20 +32,30 @@ public class ILTankAgent : Agent {
 		// Forward
 		if (forward == 1) {
 			movementTankSelf.m_MovementInputValue = 1;
+			AddReward(0.1f);
 		} else if (forward == 2) {
 			movementTankSelf.m_MovementInputValue = -1;
+			AddReward(0.1f);
+		} else if(forward == 0) {
+			movementTankSelf.m_MovementInputValue = 0;
 		}
 
 		// Turn
 		if (rotation == 1) {
-			movementTankSelf.m_TurnInputValue = 1;
-		} else if (rotation == 2) {
 			movementTankSelf.m_TurnInputValue = -1;
+			AddReward(0.1f);
+		} else if (rotation == 2) {
+			movementTankSelf.m_TurnInputValue = 1;
+			AddReward(0.1f);
+		} else if(rotation == 0) {
+			movementTankSelf.m_TurnInputValue = 0;
 		}
 
 		// Shoot
-		if (shoot)
+		if (shoot) {
 			shootingtankSelf.Fire(shootingtankSelf.m_MinLaunchForce);
+			AddReward(0.1f);
+		}
 	}
 }
 
