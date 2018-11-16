@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -45,10 +46,21 @@ namespace Complete
 
 		private void ResetGame() {
 			ResetAllTanks();
+            CleanUpLevel();
 			m_CameraControl.SetStartPositionAndSize();
 		}
 
-		private bool OneTankLeft() {
+        private void CleanUpLevel()
+        {
+            // Delete all projectiles
+            GameObject[] objs = GameObject.FindGameObjectsWithTag("projectile");
+            for(int i = objs.Length - 1; i > 0;i--)
+            {
+                Destroy(objs[i]);
+            }
+        }
+
+        private bool OneTankLeft() {
 			if (healthTank1.m_Dead || healthTank2.m_Dead) {
 				return true;
 			}
