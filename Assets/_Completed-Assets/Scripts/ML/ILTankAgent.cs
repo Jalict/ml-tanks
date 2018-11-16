@@ -46,7 +46,7 @@ public class ILTankAgent : Agent {
 
 		// Shoot
 		if (shoot)
-			shootingtankSelf.Fire();
+			shootingtankSelf.Fire(shootingtankSelf.m_MinLaunchForce);
 	}
 }
 
