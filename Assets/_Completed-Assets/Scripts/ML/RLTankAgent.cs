@@ -4,7 +4,7 @@ using UnityEngine;
 using MLAgents;
 using System;
 
-public class TankAgent : Agent {
+public class RLTankAgent : Agent {
 
     public Complete.TankHealth m_OtherHealth;
     public Complete.TankHealth m_SelfHealth;
