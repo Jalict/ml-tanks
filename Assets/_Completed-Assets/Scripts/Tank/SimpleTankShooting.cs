@@ -49,7 +49,7 @@ namespace Complete
             {
                 // ... use the max force and launch the shell.
                 m_CurrentLaunchForce = m_MaxLaunchForce;
-                Fire ();
+                Fire (m_CurrentLaunchForce);
             }
             // Otherwise, if the fire button has just started being pressed...
             else if (Input.GetButtonDown (m_FireButton))
@@ -74,12 +74,12 @@ namespace Complete
             else if (Input.GetButtonUp (m_FireButton) && !m_Fired)
             {
                 // ... launch the shell.
-                Fire ();
+                Fire (m_CurrentLaunchForce);
             }
         }
 
 
-        private void Fire ()
+        private void Fire (float launchForce)
         {
             // Set the fired flag so only Fire is only called once.
             m_Fired = true;
@@ -89,7 +89,7 @@ namespace Complete
                 Instantiate (m_Shell, m_FireTransform.position, m_FireTransform.rotation) as Rigidbody;
 
             // Set the shell's velocity to the launch force in the fire position's forward direction.
-            shellInstance.velocity = m_CurrentLaunchForce * m_FireTransform.forward; 
+            shellInstance.velocity = launchForce * m_FireTransform.forward; 
 
             // Change the clip to the firing clip and play it.
             m_ShootingAudio.clip = m_FireClip;
