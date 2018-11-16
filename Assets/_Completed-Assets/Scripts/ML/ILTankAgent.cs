@@ -17,7 +17,6 @@ public class ILTankAgent : Agent {
 		float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f };
 		var detectableObjects = new[] { "projectile", "Player", "wall" };
 		AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
-		AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 1.5f, 0f));
 	}
 
 	public override void AgentAction(float[] vectorAction, string textAction) {
@@ -33,20 +32,30 @@ public class ILTankAgent : Agent {
 		// Forward
 		if (forward == 1) {
 			movementTankSelf.m_MovementInputValue = 1;
+			AddReward(0.1f);
 		} else if (forward == 2) {
 			movementTankSelf.m_MovementInputValue = -1;
+			AddReward(0.1f);
+		} else if(forward == 0) {
+			movementTankSelf.m_MovementInputValue = 0;
 		}
 
 		// Turn
 		if (rotation == 1) {
-			movementTankSelf.m_TurnInputValue = 1;
-		} else if (rotation == 2) {
 			movementTankSelf.m_TurnInputValue = -1;
+			AddReward(0.1f);
+		} else if (rotation == 2) {
+			movementTankSelf.m_TurnInputValue = 1;
+			AddReward(0.1f);
+		} else if(rotation == 0) {
+			movementTankSelf.m_TurnInputValue = 0;
 		}
 
 		// Shoot
-		if (shoot)
+		if (shoot) {
 			shootingtankSelf.Fire(shootingtankSelf.m_MinLaunchForce);
+			AddReward(0.1f);
+		}
 	}
 }
 

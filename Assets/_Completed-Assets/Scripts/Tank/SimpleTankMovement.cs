@@ -73,9 +73,13 @@ namespace Complete
 
         private void Update ()
         {
-            // Store the value of both input axes.
-            m_MovementInputValue = Input.GetAxis (m_MovementAxisName);
-            m_TurnInputValue = Input.GetAxis (m_TurnAxisName);
+			// Store the value of both input axes.
+			//if(Input.GetAxis(m_MovementAxisName) != 0)
+			//	m_MovementInputValue = Input.GetAxis (m_MovementAxisName);
+			//if(Input.GetAxis(m_TurnAxisName) != 0)
+			//	m_TurnInputValue = Input.GetAxis (m_TurnAxisName);
+
+			Debug.Log("Move: " + m_MovementInputValue + ", Turn: " + m_TurnInputValue);
 
             EngineAudio ();
         }
