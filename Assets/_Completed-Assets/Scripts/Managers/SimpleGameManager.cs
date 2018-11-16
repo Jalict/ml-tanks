@@ -72,4 +72,12 @@ namespace Complete
 			shootingtank2.Reset();
 		}
 	}
+
+    public struct TankComponents
+    {
+        public SimpleTankHealth m_Health;
+        public SimpleTankMovement m_Movement;
+        public SimpleTankShooting m_Shooting;
+        public RayPerception m_RayPerception;
+    }
 }
