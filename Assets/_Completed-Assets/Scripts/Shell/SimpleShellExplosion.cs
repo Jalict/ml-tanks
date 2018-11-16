@@ -27,6 +27,12 @@ namespace Complete {
 				// ... and find their rigidbody.
 				Rigidbody targetRigidbody = colliders[i].GetComponent<Rigidbody>();
 
+				//Don't explode on collision with another projectile
+				if(colliders[i].gameObject.CompareTag("projectile")) {
+					Debug.Log("Projectile collision");
+					continue;
+				}
+
 				// If they don't have a rigidbody, go on to the next collider.
 				if (!targetRigidbody)
 					continue;
