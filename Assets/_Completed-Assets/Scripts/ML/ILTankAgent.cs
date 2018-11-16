@@ -17,7 +17,6 @@ public class ILTankAgent : Agent {
 		float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f };
 		var detectableObjects = new[] { "projectile", "Player", "wall" };
 		AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
-		AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 1.5f, 0f));
 	}
 
 	public override void AgentAction(float[] vectorAction, string textAction) {
