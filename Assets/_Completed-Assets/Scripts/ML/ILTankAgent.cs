@@ -18,20 +18,22 @@ public class ILTankAgent : Agent {
 		var rayDistance = 20f;
 		float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f };
 		float[] rayAngles2 = { 0f, 30f, 60f, 90f, 120f, 150f, 180f, 210f, 240f, 270f, 300f, 330f, 360f};
+		float[] rayAngles3 = { 0f, 20f, 40f, 60f, 80f, 100f, 120f, 140f, 160f, 180f, 200f, 220, 240f, 260f, 280f, 300f, 320f, 340f};
+		float[] rayAngles4 = { 0f, 45f, 90f, 135f, 180f, 225f, 270f, 315f };
 		var detectableObjects = new[] { "projectile", "Player", "wall" };
-		AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles2, detectableObjects, 0f, 0f));
+		AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles4, detectableObjects, 0f, 0f));
 
-		//Personal movement information
-		AddVectorObs(movementTankSelf.m_Rigidbody.velocity.x);
-		AddVectorObs(movementTankSelf.m_Rigidbody.velocity.y);
-		AddVectorObs(movementTankSelf.m_Rigidbody.velocity.z);
-		AddVectorObs(movementTankSelf.m_Rigidbody.angularVelocity);
+		/*
+		//Personal position information
+		AddVectorObs(movementTankSelf.m_Rigidbody.position.x);
+		AddVectorObs(movementTankSelf.m_Rigidbody.position.y);
+		AddVectorObs(movementTankSelf.m_Rigidbody.position.z);
 
-		//Opponent movement information
-		AddVectorObs(movementTankOpponent.m_Rigidbody.velocity.x);
-		AddVectorObs(movementTankOpponent.m_Rigidbody.velocity.y);
-		AddVectorObs(movementTankOpponent.m_Rigidbody.velocity.z);
-		AddVectorObs(movementTankOpponent.m_Rigidbody.angularVelocity);
+		//Opponent position information
+		AddVectorObs(movementTankOpponent.m_Rigidbody.position.x);
+		AddVectorObs(movementTankOpponent.m_Rigidbody.position.y);
+		AddVectorObs(movementTankOpponent.m_Rigidbody.position.z);
+		*/
 	}
 
 	public override void AgentAction(float[] vectorAction, string textAction) {

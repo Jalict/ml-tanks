@@ -4,12 +4,13 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using MLAgents;
 using System;
+using System.Collections.Generic;
 
 namespace Complete
 {
 	public class SimpleGameManager : MonoBehaviour {
 
-        public string[] tagsToClean;
+		public List<Rigidbody> shellList = new List<Rigidbody>();
 
 		public CameraControl m_CameraControl;       // Reference to the CameraControl script for control during different phases.
 
@@ -29,6 +30,9 @@ namespace Complete
 			ResetGame();
 		}
 
+		public void AddToShellList(Rigidbody shell) {
+			shellList.Add(shell);
+		}
 
 		private void SetCameraTargets() {
 			// Create a collection of transforms the same size as the number of tanks.
@@ -42,7 +46,6 @@ namespace Complete
 			m_CameraControl.m_Targets = targets;
 		}
 
-
 		private void Update() {
 			if (OneTankLeft()) {
 				agentTank1.Done();
@@ -52,22 +55,23 @@ namespace Complete
 		}
 
 		private void ResetGame() {
-            CleanUpLevel();
+            CleanShells();
 			ResetAllTanks();
 			m_CameraControl.SetStartPositionAndSize();
 		}
 
-        private void CleanUpLevel()
-        {
-            for(int t = 0; t < tagsToClean.Length;t++)
-            {
-                GameObject[] objectsOfTag = GameObject.FindGameObjectsWithTag(tagsToClean[t]);
-                for(int i = objectsOfTag.Length - 1; i >= 0;i--)
-                {
-                    Destroy(objectsOfTag[i]);
-                }
-            }
-        }
+        private void CleanShells() {
+			
+			for (int i = 0; i < shellList.Count; i++) {
+				Rigidbody shell = shellList[i];
+
+				//Remove the shells from the list
+				shellList.Remove(shell);
+
+				//Destroy the shells that aren't already destroyed
+				Destroy(shell.gameObject);
+			}
+		}
 
         private bool OneTankLeft() {
 			if (healthTank1.m_Dead || healthTank2.m_Dead) {
