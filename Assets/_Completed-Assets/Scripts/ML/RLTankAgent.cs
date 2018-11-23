@@ -76,7 +76,7 @@ public class RLTankAgent : Agent {
         // Ray Perception
         var rayDistance = 50f;
         float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f, -180 };
-        var detectableObjects = new[] { "wall", "wall" };
+        var detectableObjects = new[] { "Player", "wall" };
         rays = m_Self.m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f);
         AddVectorObs(rays);  
     }
@@ -88,7 +88,7 @@ public class RLTankAgent : Agent {
             // Get Movement Action
             int forward = (int)vectorAction[0];
             int rotation = (int)vectorAction[1];
-            bool shoot = vectorAction[2] == 1.0f;
+            int shoot = (int)vectorAction[2];
 
             Inputs(forward, rotation, shoot);
 
@@ -96,7 +96,7 @@ public class RLTankAgent : Agent {
         }
     }
 
-    private void Inputs(int forward, int rotation, bool shoot)
+    private void Inputs(int forward, int rotation, int shoot)
     {
         // Forward
         if (forward == 1)
@@ -126,28 +126,39 @@ public class RLTankAgent : Agent {
             m_Self.m_Movement.m_TurnInputValue = 0;
         }
 
-        // Shoot
-        if (shoot)
-            m_Self.m_Shooting.Fire(m_Self.m_Shooting.m_MinLaunchForce);
+        switch(shoot)
+        {
+            default:
+                break;
+            case 1:
+                m_Self.m_Shooting.Fire(15);
+                break;
+            case 2:
+                m_Self.m_Shooting.Fire(22.5f);
+                break;
+            case 3:
+                m_Self.m_Shooting.Fire(30);
+                break;
+
+        }
     }
 
-    private void CalculateRewards(int forward, int rotation, bool shoot)
+    private void CalculateRewards(int forward, int rotation, int shoot)
     {
-        if (forward != 0 || rotation != 0)
-            AddReward(0.1f);
-
         // Check if close to something
         var rayDistance = 50f;
         float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f, -180 };
         var detectableObjects = new[] { "Player", "wall" };
-        //m_Self.m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f)
+        m_Self.m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f);
 
         // Other lost health or died
         if (m_Other.m_Health.m_CurrentHealth < lastOtherHealth)
         {
-            AddReward(1.0f);
+            AddReward(0.5f);
 
-            if (lastOtherHealth > 0 && m_Other.m_Health.m_CurrentHealth <= 0)
+            Debug.Log(name + ": OTHER LOST HEALTH");
+
+            if (lastOtherHealth > 0 && m_Other.m_Health.m_CurrentHealth <= 0 || m_Other.m_Health.m_Dead)
             {
                 AddReward(1.0f);
                 Done();
@@ -155,17 +166,19 @@ public class RLTankAgent : Agent {
         }
         lastOtherHealth = m_Other.m_Health.m_CurrentHealth;
 
-        // Self lost health or died
-        if (m_Self.m_Health.m_CurrentHealth < lastSelfHealth)
-        {
-            AddReward(-1.0f);
+        //// Self lost health or died
+        //if (m_Self.m_Health.m_CurrentHealth < lastSelfHealth)
+        //{
+        //    AddReward(-0.5f);
 
-            if (lastSelfHealth > 0 && m_Self.m_Health.m_CurrentHealth <= 0)
-            {
-                AddReward(-1.0f);
-            }
-        }
-        lastSelfHealth = m_Self.m_Health.m_CurrentHealth;
+        //    Debug.Log(name + ": I LOST HEALTH");
+
+        //    if (lastSelfHealth > 0 && m_Self.m_Health.m_CurrentHealth <= 0 || m_Self.m_Health.m_Dead)
+        //    {
+        //        AddReward(-1.0f);
+        //    }
+        //}
+        //lastSelfHealth = m_Self.m_Health.m_CurrentHealth;
 
         // Time penalty
         AddReward(-0.05f);

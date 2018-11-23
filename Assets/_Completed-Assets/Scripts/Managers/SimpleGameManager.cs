@@ -87,7 +87,25 @@ namespace Complete
 			movementTank2.Reset();
 			shootingtank2.Reset();
 		}
-	}
+
+        public void OnDrawGizmos()
+        {
+            Gizmos.DrawWireCube(transform.position, Vector3.one * worldSize);
+        }
+
+        public static float worldSize = 110;
+
+        public static Vector3 GetNormalizedPosition(Transform transform)
+        {
+            Vector3 normalizedVector = Vector3.zero;
+
+            normalizedVector.x = (transform.position.x + (worldSize / 2)) / worldSize;
+            normalizedVector.y = (transform.position.y + (worldSize / 2)) / worldSize;
+            normalizedVector.z = (transform.position.z + (worldSize / 2)) / worldSize;
+
+            return normalizedVector;
+        }
+    }
 
     public struct TankComponents
     {
