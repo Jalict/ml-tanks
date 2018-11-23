@@ -11,12 +11,27 @@ public class ILTankAgent : Agent {
 	public Complete.SimpleTankMovement movementTankSelf;
 	public Complete.SimpleTankShooting shootingtankSelf;
 
+	public Complete.SimpleTankMovement movementTankOpponent;
+
 	public override void CollectObservations() {
 		// Ray Perception
-		var rayDistance = 12f;
+		var rayDistance = 20f;
 		float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f };
+		float[] rayAngles2 = { 0f, 30f, 60f, 90f, 120f, 150f, 180f, 210f, 240f, 270f, 300f, 330f, 360f};
 		var detectableObjects = new[] { "projectile", "Player", "wall" };
-		AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
+		AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles2, detectableObjects, 0f, 0f));
+
+		//Personal movement information
+		AddVectorObs(movementTankSelf.m_Rigidbody.velocity.x);
+		AddVectorObs(movementTankSelf.m_Rigidbody.velocity.y);
+		AddVectorObs(movementTankSelf.m_Rigidbody.velocity.z);
+		AddVectorObs(movementTankSelf.m_Rigidbody.angularVelocity);
+
+		//Opponent movement information
+		AddVectorObs(movementTankOpponent.m_Rigidbody.velocity.x);
+		AddVectorObs(movementTankOpponent.m_Rigidbody.velocity.y);
+		AddVectorObs(movementTankOpponent.m_Rigidbody.velocity.z);
+		AddVectorObs(movementTankOpponent.m_Rigidbody.angularVelocity);
 	}
 
 	public override void AgentAction(float[] vectorAction, string textAction) {
