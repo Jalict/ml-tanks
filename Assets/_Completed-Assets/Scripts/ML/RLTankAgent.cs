@@ -74,11 +74,19 @@ public class RLTankAgent : Agent {
     public override void CollectObservations()
     {
         // Ray Perception
-        var rayDistance = 50f;
-        float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f, -180 };
-        var detectableObjects = new[] { "Player", "wall" };
-        rays = m_Self.m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f);
-        AddVectorObs(rays);  
+        //var rayDistance = 50f;
+        //float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f, -180 };
+        //var detectableObjects = new[] { "Player", "wall" };
+        //rays = m_Self.m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f);
+        //AddVectorObs(rays);
+
+        Vector3 normalizedPos = SimpleGameManager.GetNormalizedPosition(transform);
+        AddVectorObs(normalizedPos.x);
+        AddVectorObs(normalizedPos.z);
+
+        normalizedPos = SimpleGameManager.GetNormalizedPosition(m_Other.m_Movement.transform);
+        AddVectorObs(normalizedPos.x);
+        AddVectorObs(normalizedPos.z);
     }
 
     public override void AgentAction(float[] vectorAction, string textAction)
@@ -146,10 +154,10 @@ public class RLTankAgent : Agent {
     private void CalculateRewards(int forward, int rotation, int shoot)
     {
         // Check if close to something
-        var rayDistance = 50f;
-        float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f, -180 };
-        var detectableObjects = new[] { "Player", "wall" };
-        m_Self.m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f);
+        //var rayDistance = 50f;
+        //float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f, -180 };
+        //var detectableObjects = new[] { "Player", "wall" };
+        //m_Self.m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f);
 
         // Other lost health or died
         if (m_Other.m_Health.m_CurrentHealth < lastOtherHealth)

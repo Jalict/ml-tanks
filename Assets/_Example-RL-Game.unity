@@ -5656,6 +5656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ca35d34e091fc40bd28245f5866012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 1304999365}
   m_PlayerNumber: 2
   m_Shell: {fileID: 5409530, guid: db5a504dd6f8e554bbb9dc3f6d98fe11, type: 2}
   m_FireTransform: {fileID: 1499656159}
@@ -5705,6 +5706,7 @@ MonoBehaviour:
   m_TurnInputValue: 0
   m_PlayerColor: {r: 1, g: 0, b: 0, a: 0}
   m_SpawnPoint: {fileID: 1049453506}
+  pos: {x: 0, y: 0, z: 0}
 --- !u!82 &764565795
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6098,8 +6100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 32
-    numStackedVectorObservations: 8
+    vectorObservationSize: 4
+    numStackedVectorObservations: 1
     vectorActionSize: 030000000300000004000000
     cameraResolutions: []
     vectorActionDescriptions:
@@ -15925,8 +15927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd0199ba16b8d749bc3c3daeec95659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagsToClean:
-  - projectile
+  shellList: []
   m_CameraControl: {fileID: 1771596988}
   agentTank1: {fileID: 2129144517}
   healthTank1: {fileID: 2129144510}
@@ -15936,7 +15937,6 @@ MonoBehaviour:
   healthTank2: {fileID: 764565793}
   movementTank2: {fileID: 764565794}
   shootingtank2: {fileID: 764565792}
-  worldSize: 110
 --- !u!4 &1304999366
 Transform:
   m_ObjectHideFlags: 0
@@ -21657,6 +21657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ca35d34e091fc40bd28245f5866012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 1304999365}
   m_PlayerNumber: 1
   m_Shell: {fileID: 5409530, guid: db5a504dd6f8e554bbb9dc3f6d98fe11, type: 2}
   m_FireTransform: {fileID: 1505094486}
@@ -21706,6 +21707,7 @@ MonoBehaviour:
   m_TurnInputValue: 0
   m_PlayerColor: {r: 0, g: 0.06818819, b: 1, a: 0}
   m_SpawnPoint: {fileID: 664963589}
+  pos: {x: 0, y: 0, z: 0}
 --- !u!82 &2129144512
 AudioSource:
   m_ObjectHideFlags: 0
