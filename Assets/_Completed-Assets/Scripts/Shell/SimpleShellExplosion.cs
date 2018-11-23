@@ -3,6 +3,7 @@
 namespace Complete {
 	public class SimpleShellExplosion : MonoBehaviour {
 
+		public SimpleGameManager gm;
 		public LayerMask m_TankMask;                        // Used to filter what the explosion affects, this should be set to "Players".
 		public ParticleSystem m_ExplosionParticles;         // Reference to the particles that will play on explosion.
 		public AudioSource m_ExplosionAudio;                // Reference to the audio that will play on explosion.
@@ -66,6 +67,8 @@ namespace Complete {
 			// Once the particles have finished, destroy the gameobject they are on.
 			ParticleSystem.MainModule mainModule = m_ExplosionParticles.main;
 			Destroy(m_ExplosionParticles.gameObject, mainModule.duration);
+
+			gm.shellList.Remove(GetComponent<Rigidbody>());
 
 			// Destroy the shell.
 			Destroy(gameObject);

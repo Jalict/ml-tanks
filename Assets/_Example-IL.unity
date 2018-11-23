@@ -300,6 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ca35d34e091fc40bd28245f5866012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 1304999365}
   m_PlayerNumber: 1
   m_Shell: {fileID: 5409530, guid: db5a504dd6f8e554bbb9dc3f6d98fe11, type: 2}
   m_FireTransform: {fileID: 1482751367}
@@ -5531,6 +5532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ca35d34e091fc40bd28245f5866012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 1304999365}
   m_PlayerNumber: 2
   m_Shell: {fileID: 5409530, guid: db5a504dd6f8e554bbb9dc3f6d98fe11, type: 2}
   m_FireTransform: {fileID: 1229140967}
@@ -15843,7 +15845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 35
+    vectorObservationSize: 40
     numStackedVectorObservations: 1
     vectorActionSize: 030000000300000002000000
     cameraResolutions: []
@@ -16043,7 +16045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 35
+    vectorObservationSize: 40
     numStackedVectorObservations: 1
     vectorActionSize: 030000000300000002000000
     cameraResolutions: []
@@ -16052,7 +16054,7 @@ MonoBehaviour:
     - Turn
     - Shoot
     vectorActionSpaceType: 0
-  brainType: 3
+  brainType: 0
   CoreBrains:
   - {fileID: 665783477}
   - {fileID: 568604007}
@@ -16271,6 +16273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd0199ba16b8d749bc3c3daeec95659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shellList: []
   m_CameraControl: {fileID: 1771596988}
   agentTank1: {fileID: 140315017}
   healthTank1: {fileID: 140315019}

@@ -5,6 +5,7 @@ namespace Complete
 {
     public class SimpleTankShooting : MonoBehaviour
     {
+		public SimpleGameManager gm;
         public int m_PlayerNumber = 1;              // Used to identify the different players.
         public Rigidbody m_Shell;                   // Prefab of the shell.
         public Transform m_FireTransform;           // A child of the tank where the shells are spawned.
@@ -57,12 +58,19 @@ namespace Complete
 				// Set the shell's velocity to the launch force in the fire position's forward direction.
 				shellInstance.velocity = launchForce * m_FireTransform.forward;
 
+				//Insert the shell in the game manager
+				gm.AddToShellList(shellInstance);
+
+				//Send the game manager to the shell, so it can remove itself on death
+				shellInstance.GetComponent<SimpleShellExplosion>().gm = gm;
+
 				// Change the clip to the firing clip and play it.
 				m_ShootingAudio.clip = m_FireClip;
 				m_ShootingAudio.Play();
 
 				// Reset the launch force.  This is a precaution in case of missing button events.
 				m_CurrentLaunchForce = m_MinLaunchForce;
+
 				return true;
 			}
 			return false;
