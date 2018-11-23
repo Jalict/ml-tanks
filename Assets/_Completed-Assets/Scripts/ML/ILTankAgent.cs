@@ -7,6 +7,8 @@ public class ILTankAgent : Agent {
 	
 	public RayPerception m_RayPerception;
 
+	public Complete.SimpleGameManager gm;
+
 	public Complete.SimpleTankHealth healthTankSelf;
 	public Complete.SimpleTankMovement movementTankSelf;
 	public Complete.SimpleTankShooting shootingtankSelf;
@@ -17,23 +19,25 @@ public class ILTankAgent : Agent {
 		// Ray Perception
 		var rayDistance = 20f;
 		float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f };
-		float[] rayAngles2 = { 0f, 30f, 60f, 90f, 120f, 150f, 180f, 210f, 240f, 270f, 300f, 330f, 360f};
+		float[] rayAngles2 = { 0f, 30f, 60f, 90f, 120f, 150f, 180f, 210f, 240f, 270f, 300f, 330f };
 		float[] rayAngles3 = { 0f, 20f, 40f, 60f, 80f, 100f, 120f, 140f, 160f, 180f, 200f, 220, 240f, 260f, 280f, 300f, 320f, 340f};
 		float[] rayAngles4 = { 0f, 45f, 90f, 135f, 180f, 225f, 270f, 315f };
 		var detectableObjects = new[] { "projectile", "Player", "wall" };
-		AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles4, detectableObjects, 0f, 0f));
+		AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles2, detectableObjects, 0f, 0f));
 
-		/*
-		//Personal position information
-		AddVectorObs(movementTankSelf.m_Rigidbody.position.x);
-		AddVectorObs(movementTankSelf.m_Rigidbody.position.y);
-		AddVectorObs(movementTankSelf.m_Rigidbody.position.z);
+		//Opponent relative position information
+		Vector3 normalizedPosSelf = Complete.SimpleGameManager.GetNormalizedPosition(movementTankSelf.transform);
+		Vector3 normalizedPosOpponent = Complete.SimpleGameManager.GetNormalizedPosition(movementTankOpponent.transform);
+		Vector3 normalizedRelativePos = normalizedPosSelf - normalizedPosOpponent;
 
-		//Opponent position information
-		AddVectorObs(movementTankOpponent.m_Rigidbody.position.x);
-		AddVectorObs(movementTankOpponent.m_Rigidbody.position.y);
-		AddVectorObs(movementTankOpponent.m_Rigidbody.position.z);
-		*/
+		AddVectorObs(normalizedRelativePos.x);
+		AddVectorObs(normalizedRelativePos.y);
+		AddVectorObs(normalizedRelativePos.z);
+
+		float rot = movementTankOpponent.transform.rotation.eulerAngles.y;
+		float normalizedRot = ((rot % 360)/360);
+
+		AddVectorObs(normalizedRot);
 	}
 
 	public override void AgentAction(float[] vectorAction, string textAction) {
