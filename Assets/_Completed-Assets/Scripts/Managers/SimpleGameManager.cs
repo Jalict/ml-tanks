@@ -10,7 +10,10 @@ namespace Complete
 {
 	public class SimpleGameManager : MonoBehaviour {
 
-		public List<Rigidbody> shellList = new List<Rigidbody>();
+        // Static Variables
+        public static float worldSize = 110;
+
+        public List<Rigidbody> shellList = new List<Rigidbody>();
 
 		public CameraControl m_CameraControl;       // Reference to the CameraControl script for control during different phases.
 
@@ -92,13 +95,6 @@ namespace Complete
 			shootingtank2.Reset();
 		}
 
-        public void OnDrawGizmos()
-        {
-            Gizmos.DrawWireCube(transform.position, Vector3.one * worldSize);
-        }
-
-        public static float worldSize = 110;
-
         public static Vector3 GetNormalizedPosition(Transform transform)
         {
             Vector3 normalizedVector = Vector3.zero;
@@ -108,6 +104,11 @@ namespace Complete
             normalizedVector.z = (transform.position.z + (worldSize / 2)) / worldSize;
 
             return normalizedVector;
+        }
+
+        public void OnDrawGizmos()
+        {
+            Gizmos.DrawWireCube(transform.position, Vector3.one * worldSize);
         }
     }
 
