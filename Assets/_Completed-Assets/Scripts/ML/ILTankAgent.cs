@@ -11,7 +11,7 @@ public class ILTankAgent : Agent {
 
 	public Complete.SimpleTankHealth healthTankSelf;
 	public Complete.SimpleTankMovement movementTankSelf;
-	public Complete.SimpleTankShooting shootingtankSelf;
+	public Complete.SimpleTankShooting shootingTankSelf;
 
 	public Complete.SimpleTankMovement movementTankOpponent;
 
@@ -22,7 +22,7 @@ public class ILTankAgent : Agent {
 		float[] rayAngles2 = { 0f, 30f, 60f, 90f, 120f, 150f, 180f, 210f, 240f, 270f, 300f, 330f };
 		float[] rayAngles3 = { 0f, 20f, 40f, 60f, 80f, 100f, 120f, 140f, 160f, 180f, 200f, 220, 240f, 260f, 280f, 300f, 320f, 340f};
 		float[] rayAngles4 = { 0f, 45f, 90f, 135f, 180f, 225f, 270f, 315f };
-		var detectableObjects = new[] { "projectile", "Player", "wall" };
+		var detectableObjects = new[] { "wall" };
 		AddVectorObs(m_RayPerception.Perceive(rayDistance, rayAngles2, detectableObjects, 0f, 0f));
 
 		//Opponent relative position information
@@ -38,6 +38,13 @@ public class ILTankAgent : Agent {
 		float normalizedRot = ((rot % 360)/360);
 
 		AddVectorObs(normalizedRot);
+	}
+
+	public override void AgentReset() {
+
+		healthTankSelf.Reset();
+		movementTankSelf.Reset();
+		shootingTankSelf.Reset();
 	}
 
 	public override void AgentAction(float[] vectorAction, string textAction) {
@@ -74,7 +81,7 @@ public class ILTankAgent : Agent {
 
 		// Shoot
 		if (shoot) {
-			shootingtankSelf.Fire(shootingtankSelf.m_MinLaunchForce);
+			shootingTankSelf.Fire(shootingTankSelf.m_MinLaunchForce);
 			AddReward(0.1f);
 		}
 	}
