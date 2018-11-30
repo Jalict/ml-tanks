@@ -59,7 +59,7 @@ namespace Complete
 
 		private void ResetGame() {
             CleanShells();
-			ResetAllTanks();
+			//ResetAllTanks();
 			m_CameraControl.SetStartPositionAndSize();
 		}
 

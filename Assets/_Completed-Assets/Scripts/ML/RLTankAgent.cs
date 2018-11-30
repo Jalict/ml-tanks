@@ -15,13 +15,11 @@ public class RLTankAgent : Agent {
     float lastOtherHealth;
     float lastSelfHealth;
 
+    float previousDistanceToOther;
+
     public void Start()
     {
         Setup();
-
-        // Get Brain
-        Brain brain = FindObjectOfType<Brain>();
-        GiveBrain(brain);
     }
 
     private void Setup()
@@ -80,13 +78,23 @@ public class RLTankAgent : Agent {
         //rays = m_Self.m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f);
         //AddVectorObs(rays);
 
-        Vector3 normalizedPos = SimpleGameManager.GetNormalizedPosition(transform);
-        AddVectorObs(normalizedPos.x);
-        AddVectorObs(normalizedPos.z);
+        Vector3 normalizedPosSelf = SimpleGameManager.GetNormalizedPosition(transform);
+        AddVectorObs(normalizedPosSelf.x);
+        AddVectorObs(normalizedPosSelf.z);
 
-        normalizedPos = SimpleGameManager.GetNormalizedPosition(m_Other.m_Movement.transform);
-        AddVectorObs(normalizedPos.x);
-        AddVectorObs(normalizedPos.z);
+        Vector3 normalizedPosOther = SimpleGameManager.GetNormalizedPosition(m_Other.m_Movement.transform);
+        AddVectorObs(normalizedPosSelf.x);
+        AddVectorObs(normalizedPosSelf.z);
+
+        // Distance to other
+        float distance = Vector3.Distance(normalizedPosSelf, normalizedPosOther);
+        AddVectorObs(distance);
+
+        // Rotation
+        float rot = transform.rotation.eulerAngles.y;
+        float normalizedRot = ((rot % 360) / 360);
+
+        AddVectorObs(normalizedRot);
     }
 
     public override void AgentAction(float[] vectorAction, string textAction)
@@ -101,6 +109,9 @@ public class RLTankAgent : Agent {
             Inputs(forward, rotation, shoot);
 
             CalculateRewards(forward, rotation, shoot);
+
+            if (m_Self.m_Health.m_Dead)
+                Done();
         }
     }
 
@@ -151,6 +162,8 @@ public class RLTankAgent : Agent {
         }
     }
 
+    public float K;
+
     private void CalculateRewards(int forward, int rotation, int shoot)
     {
         // Check if close to something
@@ -158,6 +171,20 @@ public class RLTankAgent : Agent {
         //float[] rayAngles = { 0f, 45f, 90f, 135f, 180f, 110f, 70f, -180 };
         //var detectableObjects = new[] { "Player", "wall" };
         //m_Self.m_RayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f);
+
+        float distanceToOther = Vector3.Distance(transform.position, m_Other.m_Movement.transform.position);
+        float angleToOther = (Vector3.Angle(transform.position, m_Other.m_Movement.transform.position) % 360) / 360;
+
+        if (previousDistanceToOther-distanceToOther > 0.1)
+        {
+            AddReward(0.2f);
+            if (distanceToOther > 0.05f)
+                AddReward(0.2f);
+        }
+        else
+            AddReward(-0.05f);
+
+        previousDistanceToOther = distanceToOther;
 
         // Other lost health or died
         if (m_Other.m_Health.m_CurrentHealth < lastOtherHealth)
@@ -169,24 +196,24 @@ public class RLTankAgent : Agent {
             if (lastOtherHealth > 0 && m_Other.m_Health.m_CurrentHealth <= 0 || m_Other.m_Health.m_Dead)
             {
                 AddReward(1.0f);
-                Done();
             }
         }
         lastOtherHealth = m_Other.m_Health.m_CurrentHealth;
 
-        //// Self lost health or died
-        //if (m_Self.m_Health.m_CurrentHealth < lastSelfHealth)
-        //{
-        //    AddReward(-0.5f);
+        // Self lost health or died
+        if (m_Self.m_Health.m_CurrentHealth < lastSelfHealth)
+        {
+            AddReward(-0.8f);
 
-        //    Debug.Log(name + ": I LOST HEALTH");
+            Debug.Log(name + ": I LOST HEALTH");
 
-        //    if (lastSelfHealth > 0 && m_Self.m_Health.m_CurrentHealth <= 0 || m_Self.m_Health.m_Dead)
-        //    {
-        //        AddReward(-1.0f);
-        //    }
-        //}
-        //lastSelfHealth = m_Self.m_Health.m_CurrentHealth;
+            if (lastSelfHealth > 0 && m_Self.m_Health.m_CurrentHealth <= 0 || m_Self.m_Health.m_Dead)
+            {
+                AddReward(-1.0f);
+                Done();
+            }
+        }
+        lastSelfHealth = m_Self.m_Health.m_CurrentHealth;
 
         // Time penalty
         AddReward(-0.05f);

@@ -82,11 +82,7 @@ namespace Complete
 			//Debug.Log("Move: " + m_MovementInputValue + ", Turn: " + m_TurnInputValue);
 
             EngineAudio ();
-
-            pos = SimpleGameManager.GetNormalizedPosition(transform);
         }
-
-        public Vector3 pos;
 
 
         private void EngineAudio ()
