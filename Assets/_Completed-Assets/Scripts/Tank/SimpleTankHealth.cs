@@ -49,8 +49,8 @@ namespace Complete
 				m_particleSystems[i].Play();
 			}
 
-			// Update the health slider's value and color.
-			SetHealthUI();
+            // Update the health slider's value and color.
+            SetHealthUI();
 		}
 
 		public void TakeDamage (float amount)

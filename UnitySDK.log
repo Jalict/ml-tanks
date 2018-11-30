@@ -1,5 +1,29 @@
-30-11-2018 13:20:20
+30-11-2018 15:13:12
  
+Exception
+IndexOutOfRangeException: Index was outside the bounds of the array.
+Spawnpoints.SetNewSpawnPoints () (at Assets/_Completed-Assets/Scripts/Spawnpoints.cs:32)
+Complete.SimpleGameManager.ResetGame () (at Assets/_Completed-Assets/Scripts/Managers/SimpleGameManager.cs:71)
+Complete.SimpleGameManager.Start () (at Assets/_Completed-Assets/Scripts/Managers/SimpleGameManager.cs:34)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
 Log
 Tank2: OTHER LOST HEALTH
 UnityEngine.Debug:Log(Object)
@@ -103,6 +127,2526 @@ Log
 Tank1: OTHER LOST HEALTH
 UnityEngine.Debug:Log(Object)
 RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank2: OTHER LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:194)
+RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
+MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
+MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)
+MLAgents.Academy:FixedUpdate() (at Assets/ML-Agents/Scripts/Academy.cs:610)
+
+Log
+Tank1: I LOST HEALTH
+UnityEngine.Debug:Log(Object)
+RLTankAgent:CalculateRewards(Int32, Int32, Int32) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:208)
 RLTankAgent:AgentAction(Single[], String) (at Assets/_Completed-Assets/Scripts/ML/RLTankAgent.cs:111)
 MLAgents.Agent:AgentStep() (at Assets/ML-Agents/Scripts/Agent.cs:965)
 MLAgents.Academy:EnvironmentStep() (at Assets/ML-Agents/Scripts/Academy.cs:588)

@@ -10,10 +10,10 @@ public class Statestics
     {
         string filename = @"\Statestics\" + SceneManager.GetActiveScene().name + @"\player_" + playerNumber + @"\" + type.ToString() + ".csv";
 
-        File.AppendAllText(
-            Directory.GetCurrentDirectory().ToString() + filename, 
-            Time.time+";"+type.ToString() + ";" + value + "\n"
-            );
+        using (StreamWriter w = File.AppendText(Directory.GetCurrentDirectory().ToString() + filename))
+        {
+            w.WriteLine(Time.time + ";" + type.ToString() + ";" + value + "\n");
+        }
     }
 }
 
