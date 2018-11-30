@@ -52,7 +52,13 @@ namespace Complete
 
 		private void Update() {
 			if (OneTankLeft()) {
-				agentTank1.Done();
+                if (!healthTank1.m_Dead)
+                    Statestics.WriteDataPoint(1, StateType.Winner, 1);
+                else if (!healthTank2.m_Dead)
+                    Statestics.WriteDataPoint(2, StateType.Winner, 1);
+
+
+                agentTank1.Done();
 				agentTank2.Done();
 				ResetGame();
 			}

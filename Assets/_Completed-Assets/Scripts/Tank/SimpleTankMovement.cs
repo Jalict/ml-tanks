@@ -62,6 +62,7 @@ namespace Complete
 			m_TurnInputValue = 0f;
 
             Statestics.WriteDataPoint(m_PlayerNumber, StateType.AmountOfMovement, amountOfMovement);
+            amountOfMovement = 0;
 		}
 
 

@@ -12,7 +12,7 @@ public class Statestics
 
         File.AppendAllText(
             Directory.GetCurrentDirectory().ToString() + filename, 
-            type.ToString() + ";" + value + "\n"
+            Time.time+";"+type.ToString() + ";" + value + "\n"
             );
     }
 }
@@ -21,5 +21,6 @@ public enum StateType
 {
     TimeToKill,
     TimeToHit,
-    AmountOfMovement
+    AmountOfMovement,
+    Winner
 }
