@@ -27,6 +27,7 @@ namespace Complete
 		public SimpleTankMovement movementTank2;
 		public SimpleTankShooting shootingtank2;
 
+		public Spawnpoints spawnpoints;
 
 		private void Start() {
 			SetCameraTargets();
@@ -86,6 +87,9 @@ namespace Complete
 
 		// This function is used to turn all the tanks back on and reset their positions and properties.
 		private void ResetAllTanks() {
+			//Randomize spawn locations, the tanks are set to these positions in SimpleTankMovement's Reset function
+			spawnpoints.SetNewSpawnPoints();
+
 			healthTank1.Reset();
 			movementTank1.Reset();
 			shootingtank1.Reset();

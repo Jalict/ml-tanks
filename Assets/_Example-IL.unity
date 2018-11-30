@@ -16649,6 +16649,7 @@ MonoBehaviour:
   healthTank2: {fileID: 259853634}
   movementTank2: {fileID: 259853636}
   shootingtank2: {fileID: 259853632}
+  spawnpoints: {fileID: 2035036944}
 --- !u!4 &1304999366
 Transform:
   m_ObjectHideFlags: 0
