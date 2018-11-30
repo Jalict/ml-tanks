@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Complete
 {
@@ -22,6 +23,8 @@ namespace Complete
 		//NEW SHIT
 		public Color m_PlayerColor;                             // This is the color this tank will be tinted.
 		public Transform m_SpawnPoint;                          // The position and direction the tank will have when it spawns.
+
+        public string filename;
 
 
 		private void Awake ()
@@ -57,6 +60,8 @@ namespace Complete
 			// Also reset the input values.
 			m_MovementInputValue = 0f;
 			m_TurnInputValue = 0f;
+
+            Statestics.WriteDataPoint(m_PlayerNumber, StateType.AmountOfMovement, amountOfMovement);
 		}
 
 
@@ -70,16 +75,21 @@ namespace Complete
             m_OriginalPitch = m_MovementAudio.pitch;
         }
 
+        private Vector3 lastPosition;
+        private float amountOfMovement;
 
         private void Update ()
         {
-			// Store the value of both input axes.
-			//if(Input.GetAxis(m_MovementAxisName) != 0)
-			//	m_MovementInputValue = Input.GetAxis (m_MovementAxisName);
-			//if(Input.GetAxis(m_TurnAxisName) != 0)
-			//	m_TurnInputValue = Input.GetAxis (m_TurnAxisName);
+            // Store the value of both input axes.
+            //if(Input.GetAxis(m_MovementAxisName) != 0)
+            //	m_MovementInputValue = Input.GetAxis (m_MovementAxisName);
+            //if(Input.GetAxis(m_TurnAxisName) != 0)
+            //	m_TurnInputValue = Input.GetAxis (m_TurnAxisName);
 
-			//Debug.Log("Move: " + m_MovementInputValue + ", Turn: " + m_TurnInputValue);
+            //Debug.Log("Move: " + m_MovementInputValue + ", Turn: " + m_TurnInputValue);
+
+            amountOfMovement += Vector3.Distance(transform.position, lastPosition);
+            lastPosition = transform.position;
 
             EngineAudio ();
         }
