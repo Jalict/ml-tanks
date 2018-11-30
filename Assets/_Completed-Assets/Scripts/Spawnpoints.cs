@@ -14,11 +14,9 @@ public class Spawnpoints : MonoBehaviour {
 	
 	//Get all the spawnpoints in the children of this object
 	void Start () {
-		spawnPoints = GetComponentsInChildren<Transform>();
-
-		if(spawnPoints.Length > 2) {
-			spawn1 = spawnPoints[0];
-			spawn2 = spawnPoints[1];
+		spawnPoints = new Transform[transform.childCount];
+		for (int i = 0; i < transform.childCount;i++) {
+			spawnPoints[i] = transform.GetChild(i).transform;
 		}
 	}
 
