@@ -22,7 +22,8 @@ namespace Complete
 
 		//NEW SHIT
 		public Color m_PlayerColor;                             // This is the color this tank will be tinted.
-		public Transform m_SpawnPoint;                          // The position and direction the tank will have when it spawns.
+		public Spawnpoints spawnpoints;
+		//public Transform m_SpawnPoint;                          // The position and direction the tank will have when it spawns.
 
         public string filename;
 
@@ -48,8 +49,16 @@ namespace Complete
 		// NEW SHIT
 		// Used at the start of each round to put the tank into it's default state.
 		public void Reset() {
-			transform.position = m_SpawnPoint.position;
-			transform.rotation = m_SpawnPoint.rotation;
+			//transform.position = m_SpawnPoint.position;
+			//transform.rotation = m_SpawnPoint.rotation;
+			if(m_PlayerNumber == 1) {
+				transform.position = spawnpoints.spawn1.position;
+				transform.rotation = Quaternion.Euler(0, spawnpoints.spawnAngle1, 0);
+			}
+			if(m_PlayerNumber == 2) {
+				transform.position = spawnpoints.spawn2.position;
+				transform.rotation = Quaternion.Euler(0, spawnpoints.spawnAngle2, 0);
+			}
 
 			// When the tank is turned off, set it to kinematic so it stops moving.
 			m_Rigidbody.isKinematic = true;

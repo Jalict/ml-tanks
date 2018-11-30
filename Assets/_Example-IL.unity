@@ -244,7 +244,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 72569108}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.9, y: 0, z: 31.2}
+  m_LocalPosition: {x: 38.2, y: 0, z: 32.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035036943}
@@ -300,7 +300,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 115105286}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.6, y: 0, z: -12.2}
+  m_LocalPosition: {x: -34.1, y: 0, z: -7.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035036943}
@@ -388,15 +388,15 @@ MonoBehaviour:
   brain: {fileID: 849656816}
   agentParameters:
     agentCameras: []
-    maxStep: 500
+    maxStep: 0
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 1
   m_RayPerception: {fileID: 140315016}
-  gm: {fileID: 0}
+  gm: {fileID: 1304999365}
   healthTankSelf: {fileID: 140315019}
   movementTankSelf: {fileID: 140315021}
-  shootingtankSelf: {fileID: 140315018}
+  shootingTankSelf: {fileID: 140315018}
   movementTankOpponent: {fileID: 259853636}
 --- !u!114 &140315018
 MonoBehaviour:
@@ -458,7 +458,8 @@ MonoBehaviour:
   m_MovementInputValue: 0
   m_TurnInputValue: 0
   m_PlayerColor: {r: 0, g: 0.06818819, b: 1, a: 0}
-  m_SpawnPoint: {fileID: 194018016}
+  spawnpoints: {fileID: 2035036944}
+  filename: 
 --- !u!82 &140315022
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5626,15 +5627,15 @@ MonoBehaviour:
   brain: {fileID: 1167824057}
   agentParameters:
     agentCameras: []
-    maxStep: 500
+    maxStep: 0
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 1
   m_RayPerception: {fileID: 259853630}
-  gm: {fileID: 0}
+  gm: {fileID: 1304999365}
   healthTankSelf: {fileID: 259853634}
   movementTankSelf: {fileID: 259853636}
-  shootingtankSelf: {fileID: 259853632}
+  shootingTankSelf: {fileID: 259853632}
   movementTankOpponent: {fileID: 140315021}
 --- !u!114 &259853632
 MonoBehaviour:
@@ -5696,7 +5697,8 @@ MonoBehaviour:
   m_MovementInputValue: 0
   m_TurnInputValue: 0
   m_PlayerColor: {r: 1, g: 0, b: 0, a: 0}
-  m_SpawnPoint: {fileID: 2083660209}
+  spawnpoints: {fileID: 2035036944}
+  filename: 
 --- !u!82 &259853637
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10885,7 +10887,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 454143586}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.4, y: 0, z: -40}
+  m_LocalPosition: {x: 23.3, y: 0, z: -40.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035036943}
@@ -10913,7 +10915,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 537854079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.5, y: 0, z: -14.8}
+  m_LocalPosition: {x: 37.47, y: 0, z: -16.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035036943}
@@ -11187,7 +11189,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 715272439}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.8, y: 0, z: -39.4}
+  m_LocalPosition: {x: -37.45, y: 0, z: -37.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035036943}
@@ -16174,7 +16176,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 998939985}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -41.7, y: 0, z: -28.7}
+  m_LocalPosition: {x: -35.1, y: 0, z: -22.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035036943}
@@ -16329,7 +16331,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1227790516}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -43.7, y: 0, z: 16}
+  m_LocalPosition: {x: -33.44, y: 0, z: 17.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035036943}
@@ -22052,7 +22054,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1948177829}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.3, y: 0, z: -43.4}
+  m_LocalPosition: {x: 9.42, y: 0, z: -42.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035036943}
