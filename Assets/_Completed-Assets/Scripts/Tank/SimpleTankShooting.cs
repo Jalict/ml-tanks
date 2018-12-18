@@ -23,6 +23,8 @@ namespace Complete
 		private float shootCooldownTimer = 0.0f;
 		private bool shotOnCooldown = false;
 
+		private float timestampSinceHit;
+
 		public void Reset() {
 			// When the tank is turned on, reset the launch force and the UI
 			m_CurrentLaunchForce = m_MinLaunchForce;
@@ -32,6 +34,8 @@ namespace Complete
         {
             // The fire axis is based on the player number.
             m_FireButton = "Fire" + m_PlayerNumber;
+
+			timestampSinceHit = Time.time;
         }
 
 		private void Update() {
@@ -63,6 +67,9 @@ namespace Complete
 
 				//Send the game manager to the shell, so it can remove itself on death
 				shellInstance.GetComponent<SimpleShellExplosion>().gm = gm;
+
+				// Set id for shell
+				shellInstance.GetComponent<SimpleShellExplosion>().m_playerId = m_PlayerNumber;
 
 				// Change the clip to the firing clip and play it.
 				m_ShootingAudio.clip = m_FireClip;
