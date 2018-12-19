@@ -69,7 +69,7 @@ namespace Complete
 				shellInstance.GetComponent<SimpleShellExplosion>().gm = gm;
 
 				// Set id for shell
-				shellInstance.GetComponent<SimpleShellExplosion>().m_playerId = m_PlayerNumber;
+				shellInstance.GetComponent<SimpleShellExplosion>().m_PlayerNumber = m_PlayerNumber;
 
 				// Change the clip to the firing clip and play it.
 				m_ShootingAudio.clip = m_FireClip;

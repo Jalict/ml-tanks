@@ -13,7 +13,7 @@ public class Spawnpoints : MonoBehaviour {
 	public int spawnAngle2 = 180;
 	
 	//Get all the spawnpoints in the children of this object
-	void Start () {
+	void Awake () {
 		spawnPoints = new Transform[transform.childCount];
 
 		for (int i = 0; i < transform.childCount;i++) {
@@ -29,12 +29,14 @@ public class Spawnpoints : MonoBehaviour {
         List<Transform> spawnPointBuffer = new List<Transform>();
         spawnPointBuffer.AddRange(spawnPoints);
 
-        spawn1 = spawnPoints[Random.Range(0, spawnPointBuffer.Count)];
-        spawnPointBuffer.Remove(spawn1);
-        spawn2 = spawnPoints[Random.Range(0, spawnPointBuffer.Count)];
+        //spawn1 = spawnPoints[Random.Range(0, spawnPointBuffer.Count)];
+        spawn1 = spawnPoints[0];
+        //spawnPointBuffer.Remove(spawn1);
+        //spawn2 = spawnPoints[Random.Range(0, spawnPointBuffer.Count)];
+        spawn2 = spawnPoints[1];
 
-		//Randomize angles, but always keep the tanks facing opposite directions
-		int newAngle = Random.Range(0, 4) * 90;
+        //Randomize angles, but always keep the tanks facing opposite directions
+        int newAngle = Random.Range(0, 4) * 90;
 		spawnAngle1 = 0 + newAngle;
 		spawnAngle2 = 180 + newAngle;
 	}

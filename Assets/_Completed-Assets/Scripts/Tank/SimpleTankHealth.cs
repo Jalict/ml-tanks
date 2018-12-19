@@ -72,8 +72,9 @@ namespace Complete
             // If I don't get hit by myself, then measure the time!
             if(playerNumber != GetComponent<SimpleTankMovement>().m_PlayerNumber) 
             {
-                Statestics.WriteDataPoint(playerNumber, StateType.TimeToHit, timestampForHit);
+                Statestics.WriteDataPoint(playerNumber, StateType.TimeToHit, Time.time - timestampForHit);
                 timestampForHit = Time.time;
+                Debug.Log("Player " + playerNumber + " hit " + " player " + GetComponent<SimpleTankMovement>().m_PlayerNumber);
             }
 
             // If the current health is at or below zero and it has not yet been registered, call OnDeath.
@@ -84,7 +85,8 @@ namespace Complete
                 // If I died and the it wasn't myself who killed me, measure the time!
                 if(playerNumber != GetComponent<SimpleTankMovement>().m_PlayerNumber) 
                 {
-                    Statestics.WriteDataPoint(playerNumber, StateType.TimeToKill, timestampForKill);
+                    Statestics.WriteDataPoint(playerNumber, StateType.TimeToKill, Time.time - timestampForKill);
+                    Debug.Log("Player " + playerNumber + " killed " + " player " + GetComponent<SimpleTankMovement>().m_PlayerNumber);
                 }
             }
         }

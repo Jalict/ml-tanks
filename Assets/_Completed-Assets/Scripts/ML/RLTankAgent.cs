@@ -162,8 +162,6 @@ public class RLTankAgent : Agent {
         }
     }
 
-    public float K;
-
     private void CalculateRewards(int forward, int rotation, int shoot)
     {
         // Check if close to something
@@ -175,21 +173,17 @@ public class RLTankAgent : Agent {
         float distanceToOther = Vector3.Distance(transform.position, m_Other.m_Movement.transform.position);
         float angleToOther = (Vector3.Angle(transform.position, m_Other.m_Movement.transform.position) % 360) / 360;
 
-        if (previousDistanceToOther-distanceToOther > 0.1)
+        if (previousDistanceToOther-distanceToOther > 0.025)
         {
             AddReward(0.2f);
-            if (distanceToOther > 0.05f)
-                AddReward(0.2f);
         }
-        else
-            AddReward(-0.05f);
 
         previousDistanceToOther = distanceToOther;
 
         // Other lost health or died
         if (m_Other.m_Health.m_CurrentHealth < lastOtherHealth)
         {
-            AddReward(0.5f);
+            AddReward(1.0f);
 
             Debug.Log(name + ": OTHER LOST HEALTH");
 
@@ -216,7 +210,7 @@ public class RLTankAgent : Agent {
         lastSelfHealth = m_Self.m_Health.m_CurrentHealth;
 
         // Time penalty
-        AddReward(-0.05f);
+        AddReward(-0.01f);
     }
 }
 
